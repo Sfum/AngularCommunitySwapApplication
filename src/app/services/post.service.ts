@@ -7,13 +7,15 @@ import {userComment} from "../models/comment";
 @Injectable({
   providedIn: 'root'
 })
-export class PostService {
-
+export class PostService  {
 
   private postsJsonUrl = 'assets/json/post-data.json';
   private commentsJsonUrl = 'assets/json/comment-data.json';
 
   constructor(private http: HttpClient) {}
+
+  posts$ = this.http.get<Post[]>(this.postsJsonUrl)
+  userComments$ = this.http.get<Post[]>(this.commentsJsonUrl)
 
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(this.postsJsonUrl).pipe(
