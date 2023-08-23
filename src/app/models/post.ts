@@ -7,5 +7,4 @@ export interface Post {
   post_userId: number;
   post_body: string;
   userComments: userComment[];
-
 }
