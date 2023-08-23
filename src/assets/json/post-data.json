@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "post_name": "New Electronics Listing",
+    "post_date": "2023-08-20",
+    "post_itemId": 15,
+    "post_body": "I'm selling a brand new smartphone. Contact me if interested!",
+    "userId": 4
+  },
+  {
+    "id": 2,
+    "post_name": "Book Swap",
+    "post_date": "2023-08-19",
+    "post_itemId": 3,
+    "post_body": "Looking to swap my fantasy novels for science fiction books.",
+    "userId": 8
+  },
+  {
+    "id": 3,
+    "post_name": "Clothing Sale",
+    "post_date": "2023-08-18",
+    "post_itemId": 12,
+    "post_body": "Selling my collection of vintage clothing. Check it out!",
+    "userId": 15
+  },
+  {
+    "id": 4,
+    "post_name": "Garden Tools Giveaway",
+    "post_date": "2023-08-17",
+    "post_itemId": 8,
+    "post_body": "I have extra gardening tools to give away. Contact me if interested.",
+    "userId": 10
+  },
+  {
+    "id": 5,
+    "post_name": "Fitness Equipment for Sale",
+    "post_date": "2023-08-16",
+    "post_itemId": 2,
+    "post_body": "Selling my workout equipment. Great condition!",
+    "userId": 19
+  },
+  {
+    "id": 6,
+    "post_name": "Furniture Swap",
+    "post_date": "2023-08-15",
+    "post_itemId": 11,
+    "post_body": "Want to trade my sofa for a dining table. Let's swap!",
+    "userId": 14
+  },
+  {
+    "id": 7,
+    "post_name": "Toy Collection Sale",
+    "post_date": "2023-08-14",
+    "post_itemId": 9,
+    "post_body": "Selling my vintage toy collection. Rare finds available!",
+    "userId": 3
+  },
+  {
+    "id": 8,
+    "post_name": "Kitchen Appliances Giveaway",
+    "post_date": "2023-08-13",
+    "post_itemId": 17,
+    "post_body": "I have extra kitchen appliances to give away for free.",
+    "userId": 7
+  },
+  {
+    "id": 9,
+    "post_name": "Collectibles Auction",
+    "post_date": "2023-08-12",
+    "post_itemId": 10,
+    "post_body": "Hosting an online auction for collectible items. Bid now!",
+    "userId": 11
+  },
+  {
+    "id": 10,
+    "post_name": "Art Supplies Sale",
+    "post_date": "2023-08-11",
+    "post_itemId": 4,
+    "post_body": "Selling art supplies at discounted prices. Perfect for artists!",
+    "userId": 6
+  },
+  {
+    "id": 11,
+    "post_name": "Jewelry Showcase",
+    "post_date": "2023-08-10",
+    "post_itemId": 16,
+    "post_body": "Check out my exquisite jewelry collection.",
+    "userId": 18
+  },
+  {
+    "id": 12,
+    "post_name": "Music Gear Sale",
+    "post_date": "2023-08-09",
+    "post_itemId": 1,
+    "post_body": "Selling musical instruments and gear. Great deals!",
+    "userId": 2
+  },
+  {
+    "id": 13,
+    "post_name": "Beauty Products Bundle",
+    "post_date": "2023-08-08",
+    "post_itemId": 20,
+    "post_body": "Bundle of skincare and beauty products for sale.",
+    "userId": 9
+  },
+  {
+    "id": 14,
+    "post_name": "Camping Gear Swap",
+    "post_date": "2023-08-07",
+    "post_itemId": 6,
+    "post_body": "Let's swap camping gear for your next adventure.",
+    "userId": 17
+  },
+  {
+    "id": 15,
+    "post_name": "Pet Supplies Sale",
+    "post_date": "2023-08-06",
+    "post_itemId": 19,
+    "post_body": "Selling pet supplies and accessories. Spoil your pets!",
+    "userId": 1
+  },
+  {
+    "id": 16,
+    "post_name": "Antiques Auction",
+    "post_date": "2023-08-05",
+    "post_itemId": 13,
+    "post_body": "Join our antique auction. Discover treasures from the past.",
+    "userId": 20
+  },
+  {
+    "id": 17,
+    "post_name": "Office Supplies Sale",
+    "post_date": "2023-08-04",
+    "post_itemId": 5,
+    "post_body": "Get your office supplies at discounted prices!",
+    "userId": 12
+  },
+  {
+    "id": 18,
+    "post_name": "Travel Gear Giveaway",
+    "post_date": "2023-08-03",
+    "post_itemId": 14,
+    "post_body": "Giving away travel accessories for your next trip.",
+    "userId": 16
+  },
+  {
+    "id": 19,
+    "post_name": "DIY Tools Sale",
+    "post_date": "2023-08-02",
+    "post_itemId": 7,
+    "post_body": "Selling a variety of DIY tools and equipment.",
+    "userId": 5
+  },
+  {
+    "id": 20,
+    "post_name": "Fashion Accessories Sale",
+    "post_date": "2023-08-01",
+    "post_itemId": 18,
+    "post_body": "Upgrade your style with our fashion accessories.",
+    "userId": 13
+  }
+]

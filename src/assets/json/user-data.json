@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "user_name": "JohnDoe",
+    "user_email": "john.doe@example.com",
+    "user_password": "passdword123",
+    "user_image": "user_image01.jpg"
+  },
+  {
+    "id": 2,
+    "user_name": "AliceSmith",
+    "user_email": "alice.smith@example.com",
+    "user_password": "securepassss",
+    "user_image": "user_image02.jpg"
+  },
+  {
+    "id": 3,
+    "user_name": "BobJohnson",
+    "user_email": "bob.johnson@example.com",
+    "user_password": "bobspassword",
+    "user_image": "user_image03.jpg"
+  },
+  {
+    "id": 4,
+    "user_name": "EmilyBrown",
+    "user_email": "emily.brown@example.com",
+    "user_password": "emilypass",
+    "user_image": "user_image04.jpg"
+  },
+  {
+    "id": 5,
+    "user_name": "DavidWilson",
+    "user_email": "david.wilson@example.com",
+    "user_password": "davidpass123",
+    "user_image": "user_image05.jpg"
+  },
+  {
+    "id": 6,
+    "user_name": "SophiaLee",
+    "user_email": "sophia.lee@example.com",
+    "user_password": "sophiapass",
+    "user_image": "user_image06.jpg"
+  },
+  {
+    "id": 7,
+    "user_name": "MichaelGarcia",
+    "user_email": "michael.garcia@example.com",
+    "user_password": "michaelpass",
+    "user_image": "user_image07.jpg"
+  },
+  {
+    "id": 8,
+    "user_name": "OliviaMartinez",
+    "user_email": "olivia.martinez@example.com",
+    "user_password": "oliviapass",
+    "user_image": "user_image08.jpg"
+  },
+  {
+    "id": 9,
+    "user_name": "JamesSmith",
+    "user_email": "james.smith@example.com",
+    "user_password": "jamessmith123",
+    "user_image": "user_image09.jpg"
+  },
+  {
+    "id": 10,
+    "user_name": "EmmaWilson",
+    "user_email": "emma.wilson@example.com",
+    "user_password": "emmapass",
+    "user_image": "user_image10.jpg"
+  },
+  {
+    "id": 11,
+    "user_name": "LiamDavis",
+    "user_email": "liam.davis@example.com",
+    "user_password": "liampass",
+    "user_image": "user_image11.jpg"
+  },
+  {
+    "id": 12,
+    "user_name": "AvaClark",
+    "user_email": "ava.clark@example.com",
+    "user_password": "ava123",
+    "user_image": "user_image12.jpg"
+  },
+  {
+    "id": 13,
+    "user_name": "NoahMiller",
+    "user_email": "noah.miller@example.com",
+    "user_password": "noahpass",
+    "user_image": "user_image13.jpg"
+  },
+  {
+    "id": 14,
+    "user_name": "IsabellaWilson",
+    "user_email": "isabella.wilson@example.com",
+    "user_password": "isabellapass",
+    "user_image": "user_image14.jpg"
+  },
+  {
+    "id": 15,
+    "user_name": "EthanBrown",
+    "user_email": "ethan.brown@example.com",
+    "user_password": "ethanpass",
+    "user_image": "user_image15.jpg"
+  },
+  {
+    "id": 16,
+    "user_name": "MiaJones",
+    "user_email": "mia.jones@example.com",
+    "user_password": "miapass",
+    "user_image": "user_image16.jpg"
+  },
+  {
+    "id": 17,
+    "user_name": "MasonTaylor",
+    "user_email": "mason.taylor@example.com",
+    "user_password": "masonpass",
+    "user_image": "user_image17.jpg"
+  },
+  {
+    "id": 18,
+    "user_name": "CharlotteHarris",
+    "user_email": "charlotte.harris@example.com",
+    "user_password": "charlottepass",
+    "user_image": "user_image18.jpg"
+  },
+  {
+    "id": 19,
+    "user_name": "LiamPerez",
+    "user_email": "liam.perez@example.com",
+    "user_password": "liampass123",
+    "user_image": "user_image19.jpg"
+  },
+  {
+    "id": 20,
+    "user_name": "AvaGonzalez",
+    "user_email": "ava.gonzalez@example.com",
+    "user_password": "avap356536",
+    "user_image": "user_image20.jpg"
+  }
+]

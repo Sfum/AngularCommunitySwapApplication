@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "category_name": "Electronics",
+    "category_description": "Items related to electronics and gadgets.",
+    "category_image": ""
+  },
+  {
+    "id": 2,
+    "category_name": "Books",
+    "category_description": "Books of various genres and subjects.",
+    "category_image": ""
+  },
+  {
+    "id": 3,
+    "category_name": "Clothing",
+    "category_description": "Clothing items, including apparel and accessories.",
+    "category_image": ""
+  },
+  {
+    "id": 4,
+    "category_name": "Home and Garden",
+    "category_description": "Items for home decor and gardening.",
+    "category_image": ""
+  },
+  {
+    "id": 5,
+    "category_name": "Sports and Fitness",
+    "category_description": "Sports equipment and fitness-related items.",
+    "category_image": ""
+  },
+  {
+    "id": 6,
+    "category_name": "Furniture",
+    "category_description": "Furniture for various rooms in the house.",
+    "category_image": ""
+  },
+  {
+    "id": 7,
+    "category_name": "Toys and Games",
+    "category_description": "Toys and games for children and adults.",
+    "category_image": ""
+  },
+  {
+    "id": 8,
+    "category_name": "Kitchen Appliances",
+    "category_description": "Appliances and utensils for the kitchen.",
+    "category_image": ""
+  },
+  {
+    "id": 9,
+    "category_name": "Collectibles",
+    "category_description": "Collectible items and memorabilia.",
+    "category_image": ""
+  },
+  {
+    "id": 10,
+    "category_name": "Art and Crafts",
+    "category_description": "Art supplies and craft materials.",
+    "category_image": ""
+  },
+  {
+    "id": 11,
+    "category_name": "Jewelry and Accessories",
+    "category_description": "Jewelry items and fashion accessories.",
+    "category_image": ""
+  },
+  {
+    "id": 12,
+    "category_name": "Music and Instruments",
+    "category_description": "Musical instruments and music-related items.",
+    "category_image": ""
+  },
+  {
+    "id": 13,
+    "category_name": "Health and Beauty",
+    "category_description": "Health and beauty products and cosmetics.",
+    "category_image": ""
+  },
+  {
+    "id": 14,
+    "category_name": "Outdoor and Camping",
+    "category_description": "Outdoor gear and camping equipment.",
+    "category_image": ""
+  },
+  {
+    "id": 15,
+    "category_name": "Pet Supplies",
+    "category_description": "Supplies for pets and pet care.",
+    "category_image": ""
+  },
+  {
+    "id": 16,
+    "category_name": "Antiques",
+    "category_description": "Antique items and vintage collectibles.",
+    "category_image": ""
+  },
+  {
+    "id": 17,
+    "category_name": "Office Supplies",
+    "category_description": "Supplies for office and stationery.",
+    "category_image": ""
+  },
+  {
+    "id": 18,
+    "category_name": "Travel and Luggage",
+    "category_description": "Travel accessories and luggage.",
+    "category_image": ""
+  },
+  {
+    "id": 19,
+    "category_name": "DIY and Tools",
+    "category_description": "Do-it-yourself tools and equipment.",
+    "category_image": ""
+  },
+  {
+    "id": 20,
+    "category_name": "Movies and Entertainment",
+    "category_description": "Movies, games, and entertainment items.",
+    "category_image": ""
+  }
+]
