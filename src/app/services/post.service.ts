@@ -21,6 +21,7 @@ export class PostService  {
     return this.http.get<Post[]>(this.postsJsonUrl).pipe(
       switchMap((posts) => {
         const postIds = posts.map((post) => post.id);
+
         return forkJoin(
           of(posts),
           this.http.get<userComment[]>(this.commentsJsonUrl).pipe(
