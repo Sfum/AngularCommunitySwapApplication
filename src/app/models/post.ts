@@ -4,7 +4,8 @@ export interface Post {
   id: number;
   post_name: string;
   post_date: string;
-  post_userId: number;
+  post_image: string,
   post_body: string;
+  post_userId: number;
   userComments: userComment[];
 }

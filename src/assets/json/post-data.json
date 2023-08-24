@@ -1,162 +1,162 @@
 [
   {
     "id": 1,
-    "post_name": "New Electronics Listing",
-    "post_date": "2023-08-20",
-    "post_itemId": 15,
-    "post_body": "I'm selling a brand new smartphone. Contact me if interested!",
-    "userId": 4
+    "post_name": "Alice Johnson",
+    "post_date": "2023-08-24",
+    "post_body": "Looking to swap my bicycle for a skateboard. Any takers?",
+    "post_image": "https://5.imimg.com/data5/SELLER/Default/2021/7/LR/FU/MQ/3027728/yamaha-fzs-fi-new-bike-500x500.jpg",
+    "post_userId": 15
   },
   {
     "id": 2,
-    "post_name": "Book Swap",
-    "post_date": "2023-08-19",
-    "post_itemId": 3,
-    "post_body": "Looking to swap my fantasy novels for science fiction books.",
-    "userId": 8
+    "post_name": "Bob Smith",
+    "post_date": "2023-08-23",
+    "post_body": "I have a collection of vinyl records. Willing to trade for vintage posters.",
+    "post_image": "https://sm.pcmag.com/t/pcmag_uk/help/a/analog-onl/analog-online-how-to-start-your-vinyl-record-collection_y4qj.3840.jpg",
+    "post_userId": 3
   },
   {
     "id": 3,
-    "post_name": "Clothing Sale",
-    "post_date": "2023-08-18",
-    "post_itemId": 12,
-    "post_body": "Selling my collection of vintage clothing. Check it out!",
-    "userId": 15
+    "post_name": "Charlie Brown",
+    "post_date": "2023-08-22",
+    "post_body": "Let's swap gardening tools. I have extra shovels and rakes.",
+    "post_image": "",
+    "post_userId": 19
   },
   {
     "id": 4,
-    "post_name": "Garden Tools Giveaway",
-    "post_date": "2023-08-17",
-    "post_itemId": 8,
-    "post_body": "I have extra gardening tools to give away. Contact me if interested.",
-    "userId": 10
+    "post_name": "David Wilson",
+    "post_date": "2023-08-21",
+    "post_body": "Offering a gaming console for trade. Looking for board games.",
+    "post_image": "",
+    "post_userId": 12
   },
   {
     "id": 5,
-    "post_name": "Fitness Equipment for Sale",
-    "post_date": "2023-08-16",
-    "post_itemId": 2,
-    "post_body": "Selling my workout equipment. Great condition!",
-    "userId": 19
+    "post_name": "Ella Davis",
+    "post_date": "2023-08-20",
+    "post_body": "Seeking to exchange my old laptop for a tablet. Any takers?",
+    "post_image": "",
+    "post_userId": 14
   },
   {
     "id": 6,
-    "post_name": "Furniture Swap",
-    "post_date": "2023-08-15",
-    "post_itemId": 11,
-    "post_body": "Want to trade my sofa for a dining table. Let's swap!",
-    "userId": 14
+    "post_name": "Frank White",
+    "post_date": "2023-08-19",
+    "post_body": "Offering art supplies for trade. Need woodworking tools.",
+    "post_image": "",
+    "post_userId": 1
   },
   {
     "id": 7,
-    "post_name": "Toy Collection Sale",
-    "post_date": "2023-08-14",
-    "post_itemId": 9,
-    "post_body": "Selling my vintage toy collection. Rare finds available!",
-    "userId": 3
+    "post_name": "Grace Miller",
+    "post_date": "2023-08-18",
+    "post_body": "I have a collection of vintage cameras. Open to offers.",
+    "post_image": "",
+    "post_userId": 20
   },
   {
     "id": 8,
-    "post_name": "Kitchen Appliances Giveaway",
-    "post_date": "2023-08-13",
-    "post_itemId": 17,
-    "post_body": "I have extra kitchen appliances to give away for free.",
-    "userId": 7
+    "post_name": "Henry Anderson",
+    "post_date": "2023-08-17",
+    "post_body": "Looking to swap my surfboard for a kayak. Let's chat!",
+    "post_image": "",
+    "post_userId": 11
   },
   {
     "id": 9,
-    "post_name": "Collectibles Auction",
-    "post_date": "2023-08-12",
-    "post_itemId": 10,
-    "post_body": "Hosting an online auction for collectible items. Bid now!",
-    "userId": 11
+    "post_name": "Ivy Moore",
+    "post_date": "2023-08-16",
+    "post_body": "Offering a telescope for trade. Interested in musical instruments.",
+    "post_image": "",
+    "post_userId": 16
   },
   {
     "id": 10,
-    "post_name": "Art Supplies Sale",
-    "post_date": "2023-08-11",
-    "post_itemId": 4,
-    "post_body": "Selling art supplies at discounted prices. Perfect for artists!",
-    "userId": 6
+    "post_name": "Jack Taylor",
+    "post_date": "2023-08-15",
+    "post_body": "Let's swap gardening tips and seeds. I have tomatoes to share.",
+    "post_image": "",
+    "post_userId": 9
   },
   {
     "id": 11,
-    "post_name": "Jewelry Showcase",
-    "post_date": "2023-08-10",
-    "post_itemId": 16,
-    "post_body": "Check out my exquisite jewelry collection.",
-    "userId": 18
+    "post_name": "Kate Martin",
+    "post_date": "2023-08-14",
+    "post_body": "Offering vintage clothing for trade. Looking for retro accessories.",
+    "post_image": "",
+    "post_userId": 13
   },
   {
     "id": 12,
-    "post_name": "Music Gear Sale",
-    "post_date": "2023-08-09",
-    "post_itemId": 1,
-    "post_body": "Selling musical instruments and gear. Great deals!",
-    "userId": 2
+    "post_name": "Liam Clark",
+    "post_date": "2023-08-13",
+    "post_body": "Seeking to exchange my smartphone for a smartwatch. Any takers?",
+    "post_image": "",
+    "post_userId": 10
   },
   {
     "id": 13,
-    "post_name": "Beauty Products Bundle",
-    "post_date": "2023-08-08",
-    "post_itemId": 20,
-    "post_body": "Bundle of skincare and beauty products for sale.",
-    "userId": 9
+    "post_name": "Mia Turner",
+    "post_date": "2023-08-12",
+    "post_body": "Looking to swap my mountain bike for a road bike. Let's trade!",
+    "post_image": "",
+    "post_userId": 7
   },
   {
     "id": 14,
-    "post_name": "Camping Gear Swap",
-    "post_date": "2023-08-07",
-    "post_itemId": 6,
-    "post_body": "Let's swap camping gear for your next adventure.",
-    "userId": 17
+    "post_name": "Noah Harris",
+    "post_date": "2023-08-11",
+    "post_body": "Offering camping gear for trade. Need hiking equipment.",
+    "post_image": "",
+    "post_userId": 18
   },
   {
     "id": 15,
-    "post_name": "Pet Supplies Sale",
-    "post_date": "2023-08-06",
-    "post_itemId": 19,
-    "post_body": "Selling pet supplies and accessories. Spoil your pets!",
-    "userId": 1
+    "post_name": "Olivia King",
+    "post_date": "2023-08-10",
+    "post_body": "I have a collection of classic novels. Willing to trade for comics.",
+    "post_image": "",
+    "post_userId": 8
   },
   {
     "id": 16,
-    "post_name": "Antiques Auction",
-    "post_date": "2023-08-05",
-    "post_itemId": 13,
-    "post_body": "Join our antique auction. Discover treasures from the past.",
-    "userId": 20
+    "post_name": "Peter Adams",
+    "post_date": "2023-08-09",
+    "post_body": "Seeking to exchange my fitness equipment for a bicycle. Any takers?",
+    "post_image": "",
+    "post_userId": 2
   },
   {
     "id": 17,
-    "post_name": "Office Supplies Sale",
-    "post_date": "2023-08-04",
-    "post_itemId": 5,
-    "post_body": "Get your office supplies at discounted prices!",
-    "userId": 12
+    "post_name": "Quinn Turner",
+    "post_date": "2023-08-08",
+    "post_body": "Let's swap cooking recipes and utensils. I make a mean lasagna!",
+    "post_image": "",
+    "post_userId": 17
   },
   {
     "id": 18,
-    "post_name": "Travel Gear Giveaway",
-    "post_date": "2023-08-03",
-    "post_itemId": 14,
-    "post_body": "Giving away travel accessories for your next trip.",
-    "userId": 16
+    "post_name": "Ryan Mitchell",
+    "post_date": "2023-08-07",
+    "post_body": "Offering fishing gear for trade. Interested in camping gear.",
+    "post_image": "",
+    "post_userId": 5
   },
   {
     "id": 19,
-    "post_name": "DIY Tools Sale",
-    "post_date": "2023-08-02",
-    "post_itemId": 7,
-    "post_body": "Selling a variety of DIY tools and equipment.",
-    "userId": 5
+    "post_name": "Sofia White",
+    "post_date": "2023-08-06",
+    "post_body": "Looking to swap my skateboard for a bicycle. Any takers?",
+    "post_image": "",
+    "post_userId": 4
   },
   {
     "id": 20,
-    "post_name": "Fashion Accessories Sale",
-    "post_date": "2023-08-01",
-    "post_itemId": 18,
-    "post_body": "Upgrade your style with our fashion accessories.",
-    "userId": 13
+    "post_name": "Thomas Anderson",
+    "post_date": "2023-08-05",
+    "post_body": "Offering musical instruments for trade. Need art supplies.",
+    "post_image": "",
+    "post_userId": 6
   }
 ]

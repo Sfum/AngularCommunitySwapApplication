@@ -1,6 +1,10 @@
 <mat-card class="card" *ngIf="posts">
   <h2 class="font-primary">{{ posts.post_name }}</h2>
   <p class="font-secondary">{{ posts.post_body }}</p>
+
+  <img [src]="posts.post_image" width="200px">
+
+
   <div>
     <h3 class="font-secondary-light">Comments:</h3>
 
