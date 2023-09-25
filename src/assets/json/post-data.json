@@ -5,7 +5,8 @@
     "post_date": "2023-08-24",
     "post_body": "Looking to swap my bicycle for a skateboard. Any takers?",
     "post_image": "https://5.imimg.com/data5/SELLER/Default/2021/7/LR/FU/MQ/3027728/yamaha-fzs-fi-new-bike-500x500.jpg",
-    "post_userId": 15
+    "post_userId": 15,
+    "post_categoryId": 4
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "post_date": "2023-08-23",
     "post_body": "I have a collection of vinyl records. Willing to trade for vintage posters.",
     "post_image": "https://sm.pcmag.com/t/pcmag_uk/help/a/analog-onl/analog-online-how-to-start-your-vinyl-record-collection_y4qj.3840.jpg",
-    "post_userId": 3
+    "post_userId": 3,
+    "post_categoryId": 5
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "post_date": "2023-08-22",
     "post_body": "Let's swap gardening tools. I have extra shovels and rakes.",
     "post_image": "",
-    "post_userId": 19
+    "post_userId": 19,
+    "post_categoryId": 2
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "post_date": "2023-08-21",
     "post_body": "Offering a gaming console for trade. Looking for board games.",
     "post_image": "",
-    "post_userId": 12
+    "post_userId": 12,
+    "post_categoryId": 1
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "post_date": "2023-08-20",
     "post_body": "Seeking to exchange my old laptop for a tablet. Any takers?",
     "post_image": "",
-    "post_userId": 14
+    "post_userId": 14,
+    "post_categoryId": 6
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "post_date": "2023-08-19",
     "post_body": "Offering art supplies for trade. Need woodworking tools.",
     "post_image": "",
-    "post_userId": 1
+    "post_userId": 1,
+    "post_categoryId": 3
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "post_date": "2023-08-18",
     "post_body": "I have a collection of vintage cameras. Open to offers.",
     "post_image": "",
-    "post_userId": 20
+    "post_userId": 20,
+    "post_categoryId": 1
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "post_date": "2023-08-17",
     "post_body": "Looking to swap my surfboard for a kayak. Let's chat!",
     "post_image": "",
-    "post_userId": 11
+    "post_userId": 11,
+    "post_categoryId": 5
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "post_date": "2023-08-16",
     "post_body": "Offering a telescope for trade. Interested in musical instruments.",
     "post_image": "",
-    "post_userId": 16
+    "post_userId": 16,
+    "post_categoryId": 4
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "post_date": "2023-08-15",
     "post_body": "Let's swap gardening tips and seeds. I have tomatoes to share.",
     "post_image": "",
-    "post_userId": 9
+    "post_userId": 9,
+    "post_categoryId": 2
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "post_date": "2023-08-14",
     "post_body": "Offering vintage clothing for trade. Looking for retro accessories.",
     "post_image": "",
-    "post_userId": 13
+    "post_userId": 3,
+    "post_categoryId": 7
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "post_date": "2023-08-13",
     "post_body": "Seeking to exchange my smartphone for a smartwatch. Any takers?",
     "post_image": "",
-    "post_userId": 10
+    "post_userId": 10,
+    "post_categoryId": 4
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "post_date": "2023-08-12",
     "post_body": "Looking to swap my mountain bike for a road bike. Let's trade!",
     "post_image": "",
-    "post_userId": 7
+    "post_userId": 7,
+    "post_categoryId": 8
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "post_date": "2023-08-11",
     "post_body": "Offering camping gear for trade. Need hiking equipment.",
     "post_image": "",
-    "post_userId": 18
+    "post_userId": 18,
+    "post_categoryId": 9
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "post_date": "2023-08-10",
     "post_body": "I have a collection of classic novels. Willing to trade for comics.",
     "post_image": "",
-    "post_userId": 8
+    "post_userId": 8,
+    "post_categoryId": 3
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "post_date": "2023-08-09",
     "post_body": "Seeking to exchange my fitness equipment for a bicycle. Any takers?",
     "post_image": "",
-    "post_userId": 2
+    "post_userId": 2,
+    "post_categoryId": 4
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "post_date": "2023-08-08",
     "post_body": "Let's swap cooking recipes and utensils. I make a mean lasagna!",
     "post_image": "",
-    "post_userId": 17
+    "post_userId": 17,
+    "post_categoryId": 1
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "post_date": "2023-08-07",
     "post_body": "Offering fishing gear for trade. Interested in camping gear.",
     "post_image": "",
-    "post_userId": 5
+    "post_userId": 5,
+    "post_categoryId": 5
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "post_date": "2023-08-06",
     "post_body": "Looking to swap my skateboard for a bicycle. Any takers?",
     "post_image": "",
-    "post_userId": 4
+    "post_userId": 4,
+    "post_categoryId": 8
   },
   {
     "id": 20,
@@ -157,6 +176,7 @@
     "post_date": "2023-08-05",
     "post_body": "Offering musical instruments for trade. Need art supplies.",
     "post_image": "",
-    "post_userId": 6
+    "post_userId": 6,
+    "post_categoryId": 9
   }
 ]

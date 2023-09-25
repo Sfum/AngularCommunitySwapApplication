@@ -1,13 +1,10 @@
-<mat-card class="card" *ngIf="posts">
+<div class="card" *ngIf="posts">
   <h2 class="font-primary">{{ posts.post_name }}</h2>
   <p class="font-secondary">{{ posts.post_body }}</p>
-
+  <p class="font-secondary">{{ posts.post_date }}</p>
   <img [src]="posts.post_image" width="200px">
-
-
   <div>
     <h3 class="font-secondary-light">Comments:</h3>
-
       <mat-accordion *ngFor="let userComment of posts.userComments">
         <mat-expansion-panel hideToggle>
           <mat-expansion-panel-header>
@@ -22,11 +19,9 @@
         </mat-expansion-panel>
         <mat-expansion-panel (opened)="panelOpenState = true"
                              (closed)="panelOpenState = false">
-
         </mat-expansion-panel>
       </mat-accordion>
-
       <li class="card__comment-list" >
       </li>
   </div>
-</mat-card>
+</div>

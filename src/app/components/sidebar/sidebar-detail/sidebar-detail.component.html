@@ -1,0 +1,17 @@
+<div class="sidebar" *ngIf="filterField$ | async as category">
+  <mat-form-field class="sidebar__select" appearance="fill">
+    <mat-label class="sidebar__filter-label">Filter by category</mat-label>
+    <mat-select
+      class="sidebar__form--control"
+      (selectionChange)="optionSupplierSelected($any($event.value))">
+
+      <mat-option value="0">- All categories -</mat-option>
+      <mat-option
+        *ngFor="let category of category"
+        [value]="category.id"
+      >
+        {{ category.category_name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
