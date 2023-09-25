@@ -1,4 +1,4 @@
-<div class="sidebar" *ngIf="filterField$ | async as category">
+<mat-card class="sidebar" *ngIf="filterField$ | async as category">
   <mat-form-field class="sidebar__select" appearance="fill">
     <mat-label class="sidebar__filter-label">Filter by category</mat-label>
     <mat-select
@@ -14,4 +14,4 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
-</div>
+</mat-card>

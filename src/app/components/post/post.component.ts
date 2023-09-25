@@ -15,6 +15,6 @@ export class PostComponent {
               private categoryService: CategoryService) {
   }
 
-  posts$ = this.postService.getPosts()
+  posts$ = this.postService.productsFiltered$
 
 }

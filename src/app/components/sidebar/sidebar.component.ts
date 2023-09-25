@@ -9,10 +9,10 @@ import {PostService} from "../../services/post.service";
 })
 export class SidebarComponent {
 
-  constructor(private categoryService: CategoryService) {}
+  constructor(private postService: PostService) {}
 
   optionCategorySelected(selectedCategoryId: number) {
-    return this.categoryService.categorySelected(selectedCategoryId)
+    return this.postService.categorySelected(selectedCategoryId)
   }
 
 }

@@ -1,1 +1,3 @@
-<app-post-detail *ngFor="let post of posts$ | async" [posts]="post"></app-post-detail>
+<div class="container">
+<app-post-detail class="container__inner" *ngFor="let post of posts$ | async" [posts]="post"></app-post-detail>
+</div>
