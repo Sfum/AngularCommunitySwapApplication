@@ -16,6 +16,7 @@ import {
 import {Post} from "../models/post";
 import {userComment} from "../models/comment";
 import {CategoryService} from "./category.service";
+import {UserService} from "./user.service";
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +27,8 @@ export class PostService  {
   private commentsJsonUrl = 'assets/json/comment-data.json';
 
   constructor(private http: HttpClient,
-              private categoryService: CategoryService) {}
+              private categoryService: CategoryService,
+              private userService: UserService) {}
 
   public categorySelectedSubject = new BehaviorSubject<number>(0);
   categorySelectedAction$ = this.categorySelectedSubject.asObservable();
@@ -47,14 +49,18 @@ export class PostService  {
   productsFiltered$ = combineLatest([
     this.categoryActionStream$,
     this.categoryService.categories$,
+    this.userService.users$
   ]).pipe(
-    map(([post, categories]) =>
+    map(([post, categories, users]) =>
       post.map(
         (post) =>
           ({
             ...post,
             post_categoryId: categories.find((c) => post.post_categoryId === c.id)?.[
               'category_name'
+              ],
+            post_userId: users.find((u) => post.post_userId === u.id)?.[
+              'user_name'
               ],
           } as unknown as Post)
       )

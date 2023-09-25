@@ -1,5 +1,5 @@
 <mat-card class="card mat-elevation-z10" *ngIf="posts">
-  <h2 class="font-primary">{{ posts.post_name }}</h2>
+  <h2 class="font-primary">{{ posts.post_userId }}</h2>
   <p class="font-secondary">{{ posts.post_body }}</p>
   <p class="font-secondary">{{ posts.post_date }}</p>
   <img [src]="posts.post_image" height="auto">
@@ -9,11 +9,10 @@
         <mat-expansion-panel hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
-             (Offer by {{ posts.post_name}})
+            {{ userComment.comment_name}}
             </mat-panel-title>
             <mat-panel-description>
               {{ userComment.comment_date }}
-              {{ posts.post_categoryId }}
             </mat-panel-description>
           </mat-expansion-panel-header>
           {{ userComment.comment_body }}
@@ -25,4 +24,4 @@
       <li class="card__comment-list" >
       </li>
   </div>
-</mat-card>
+</div>
