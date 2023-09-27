@@ -1,15 +1,17 @@
 <mat-card class="card mat-elevation-z10" *ngIf="posts">
-  <h2 class="font-primary">{{ posts.post_userId }}</h2>
+  <h2 class="font-primary">{{ posts.post_name }}</h2>
+  <h2 class="font-secondary-light">{{ posts.post_userId }}</h2>
   <p class="font-secondary">{{ posts.post_body }}</p>
   <p class="font-secondary">{{ posts.post_date }}</p>
-  <img [src]="posts.post_image" height="auto">
+  <img [src]="posts.post_image" height="200px" width="auto">
   <div>
-    <h3 class="font-secondary-light">Comments:</h3>
+    <div class="card__comment">
+    <h3 class="card__font-secondary-light">Offers:</h3>
       <mat-accordion *ngFor="let userComment of posts.userComments">
         <mat-expansion-panel hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
-            {{ userComment.comment_name}}
+              {{ posts.post_userId}}
             </mat-panel-title>
             <mat-panel-description>
               {{ userComment.comment_date }}
@@ -24,4 +26,5 @@
       <li class="card__comment-list" >
       </li>
   </div>
-</div>
+  </div>
+</mat-card>

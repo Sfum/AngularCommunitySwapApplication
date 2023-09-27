@@ -1,5 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {Post} from "../../../models/post";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-post-detail',
@@ -7,6 +8,9 @@ import {Post} from "../../../models/post";
   styleUrls: ['./post-detail.component.sass']
 })
 export class PostDetailComponent {
+
+  constructor() {}
+
   panelOpenState = false;
 
   @Input()

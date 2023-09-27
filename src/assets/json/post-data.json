@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "post_name": "Alice Johnson",
+    "post_name": "Bike for swap",
     "post_date": "2023-08-24",
     "post_body": "Looking to swap my bicycle for a skateboard. Any takers?",
-    "post_image": "https://5.imimg.com/data5/SELLER/Default/2021/7/LR/FU/MQ/3027728/yamaha-fzs-fi-new-bike-500x500.jpg",
+    "post_image": "https://media.wired.com/photos/61afb905d184762c75e00411/master/w_2560%2Cc_limit/Gear-Jackbrabbit-Bike-Yellow-top.jpg",
     "post_userId": 1,
     "post_categoryId": 4
   },
   {
     "id": 2,
-    "post_name": "Bob Smith",
+    "post_name": "Vinyl records for swap or sale",
     "post_date": "2023-08-23",
     "post_body": "I have a collection of vinyl records. Willing to trade for vintage posters.",
     "post_image": "https://sm.pcmag.com/t/pcmag_uk/help/a/analog-onl/analog-online-how-to-start-your-vinyl-record-collection_y4qj.3840.jpg",
@@ -19,55 +19,55 @@
   },
   {
     "id": 3,
-    "post_name": "Charlie Brown",
+    "post_name": "Unused gardening tools",
     "post_date": "2023-08-22",
     "post_body": "Let's swap gardening tools. I have extra shovels and rakes.",
-    "post_image": "",
+    "post_image": "https://images.food52.com/0qlmhPp3InWcRMZgLoxn3DXkqJg=/1200x900/d6424b51-c685-4610-84f3-04a19fa24d01--2021-0226_barebones-living_japanese-inspired-garden-tool-set_1x1_ty-mecham.jpg",
     "post_userId": 19,
     "post_categoryId": 2
   },
   {
     "id": 4,
-    "post_name": "David Wilson",
+    "post_name": "Vintage gaming console",
     "post_date": "2023-08-21",
     "post_body": "Offering a gaming console for trade. Looking for board games.",
-    "post_image": "",
+    "post_image": "https://hips.hearstapps.com/hmg-prod/images/gh-index-gamingconsoles-052-print-preview-1659705142.jpg",
     "post_userId": 12,
     "post_categoryId": 1
   },
   {
     "id": 5,
-    "post_name": "Ella Davis",
+    "post_name": "I need tablet. Have a laptop for swap",
     "post_date": "2023-08-20",
     "post_body": "Seeking to exchange my old laptop for a tablet. Any takers?",
-    "post_image": "",
+    "post_image": "https://i.pcmag.com/imagery/reviews/02lcg0Rt9G3gSqCpWhFG0o1-2..v1656623239.jpg",
     "post_userId": 14,
     "post_categoryId": 6
   },
   {
     "id": 6,
-    "post_name": "Frank White",
+    "post_name": "Variety of materials to use in creative projects",
     "post_date": "2023-08-19",
     "post_body": "Offering art supplies for trade. Need woodworking tools.",
-    "post_image": "",
+    "post_image": "https://www.weareteachers.com/wp-content/uploads/magazinebowl.jpg",
     "post_userId": 1,
     "post_categoryId": 3
   },
   {
     "id": 7,
-    "post_name": "Grace Miller",
+    "post_name": "Sell or swap my cameras",
     "post_date": "2023-08-18",
     "post_body": "I have a collection of vintage cameras. Open to offers.",
-    "post_image": "",
+    "post_image": "https://www.adorama.com/alc/wp-content/uploads/2018/06/film-camera-types-feature.jpg",
     "post_userId": 20,
     "post_categoryId": 1
   },
   {
     "id": 8,
-    "post_name": "Henry Anderson",
+    "post_name": "Looking for a kayak to swap my surfboard for",
     "post_date": "2023-08-17",
     "post_body": "Looking to swap my surfboard for a kayak. Let's chat!",
-    "post_image": "",
+    "post_image": "https://images.photowall.com/products/60791/surfboard-1.jpg",
     "post_userId": 11,
     "post_categoryId": 5
   },

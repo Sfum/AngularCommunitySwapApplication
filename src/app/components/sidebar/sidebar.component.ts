@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {CategoryService} from "../../services/category.service";
 import {PostService} from "../../services/post.service";
 
 @Component({
@@ -14,5 +13,4 @@ export class SidebarComponent {
   optionCategorySelected(selectedCategoryId: number) {
     return this.postService.categorySelected(selectedCategoryId)
   }
-
 }

@@ -12,9 +12,12 @@ import { HeaderComponent } from './shared/header/header.component';
 import {MatIconModule} from "@angular/material/icon";
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {MatInputModule} from "@angular/material/input";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSelectModule} from "@angular/material/select";
 import { SidebarDetailComponent } from './components/sidebar/sidebar-detail/sidebar-detail.component';
+
+import { FilterPipe } from './directives/text-filter.directive';
+
 
 @NgModule({
   declarations: [
@@ -23,19 +26,21 @@ import { SidebarDetailComponent } from './components/sidebar/sidebar-detail/side
     PostDetailComponent,
     HeaderComponent,
     SidebarComponent,
-    SidebarDetailComponent
+    SidebarDetailComponent,
+    FilterPipe
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatCardModule,
-    HttpClientModule,
-    MatExpansionModule,
-    MatIconModule,
-    MatInputModule,
-    ReactiveFormsModule,
-    MatSelectModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatCardModule,
+        HttpClientModule,
+        MatExpansionModule,
+        MatIconModule,
+        MatInputModule,
+        ReactiveFormsModule,
+        MatSelectModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

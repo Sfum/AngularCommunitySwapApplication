@@ -1,3 +1,16 @@
 <div class="container">
-<app-post-detail class="container__inner" *ngFor="let post of posts$ | async" [posts]="post"></app-post-detail>
+<!--  <div class="card__search&#45;&#45;container">-->
+<!--    <input matInput-->
+<!--           class="card__input&#45;&#45;field"-->
+<!--           type="text"-->
+<!--           name="search"-->
+<!--           [(ngModel)]="searchText"-->
+<!--           autocomplete="off"-->
+<!--           placeholder="Search products..."-->
+<!--    />-->
+<!--  </div>-->
+<app-post-detail class="container__inner"
+                 *ngFor="let post of posts$ | async" [posts]="post">
+</app-post-detail>
+
 </div>
