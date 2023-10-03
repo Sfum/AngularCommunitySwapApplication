@@ -11,7 +11,7 @@ import {userComment} from "../models/comment";
 })
 export class CategoryService {
 
-  MOCK_URL = 'http://localhost:8000/comment';
+  MOCK_URL = 'http://localhost:8000/category';
 
   categories$ = this.httpClient
     .get<Category[]>(this.MOCK_URL)

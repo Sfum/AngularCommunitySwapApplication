@@ -5,6 +5,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const postRoute = require("./routes/post.routes");
 const commentRoute = require("./routes/comment.routes");
+const categoryRoute = require("./routes/category.routes");
 
 const app = express();
 app.use(bodyParser.json());
@@ -16,6 +17,7 @@ app.use(
 app.use(cors());
 app.use("/", postRoute);
 app.use("/comment", commentRoute);
+app.use("/category", categoryRoute);
 
 // Static directory path
 app.use(
