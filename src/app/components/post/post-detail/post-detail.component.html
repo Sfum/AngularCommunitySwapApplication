@@ -1,8 +1,8 @@
 <mat-card class="card mat-elevation-z10" *ngIf="posts">
-  <div class="card__title font-primary">{{ posts.post_name }}</div>
+  <div class="card__title font-primary">{{ posts.post_name | slice: 0:38 }}...</div>
   <div class="card__subtitle font-secondary-light">{{ posts.post_userId }}</div>
   <div class="card__content font-secondary">{{ posts.post_body }}</div>
-  <div class="card__date font-secondary">{{ posts.post_date }}</div>
+  <div class="card__date font-secondary">{{ posts.post_date | slice: 0:10}}</div>
 
   <div class="card__comment">
     <img [src]="posts.post_image" height="200px" width="auto">
@@ -15,11 +15,11 @@
       <mat-icon>swap_horizontal_circle</mat-icon>
     </div>
     <div>
-      <div class="card__font-secondary-light">Comments:</div>
+      <div class="card__font-secondary-light font-secondary">Comments:</div>
       <mat-accordion *ngFor="let userComment of posts.userComments">
         <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
+          <mat-expansion-panel-header class="font-secondary">
+            <mat-panel-title class="font-secondary">
               {{ posts.post_userId}}
             </mat-panel-title>
             <mat-panel-description>
@@ -32,8 +32,7 @@
                              (closed)="panelOpenState = false">
         </mat-expansion-panel>
       </mat-accordion>
-      <li class="card__comment-list">
-      </li>
     </div>
+  </div>
   </div>
 </mat-card>
