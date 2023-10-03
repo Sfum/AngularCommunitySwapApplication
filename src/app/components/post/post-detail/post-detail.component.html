@@ -1,33 +1,39 @@
 <mat-card class="card mat-elevation-z10" *ngIf="posts">
-  <h2 class="font-primary">{{ posts.post_name }}</h2>
-  <h2 class="font-secondary-light">{{ posts.post_userId }}</h2>
-  <p class="font-secondary">{{ posts.post_body }}</p>
-  <p class="font-secondary">{{ posts.post_date }}</p>
-  <img [src]="posts.post_image" height="200px" width="auto">
-  <div>
-    <div class="card__comment">
-    <h3 class="card__font-secondary-light"><mat-icon>favorite</mat-icon></h3>
-      <div>
-        <h3 class="font-secondary-light">Comments:</h3>
-        <mat-accordion *ngFor="let userComment of posts.userComments">
-          <mat-expansion-panel hideToggle>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                {{ posts.post_name}}
-              </mat-panel-title>
-              <mat-panel-description>
+  <div class="card__title font-primary">{{ posts.post_name }}</div>
+  <div class="card__subtitle font-secondary-light">{{ posts.post_userId }}</div>
+  <div class="card__content font-secondary">{{ posts.post_body }}</div>
+  <div class="card__date font-secondary">{{ posts.post_date }}</div>
 
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            {{ userComment.comment_body }}
-          </mat-expansion-panel>
-          <mat-expansion-panel (opened)="panelOpenState = true"
-                               (closed)="panelOpenState = false">
-          </mat-expansion-panel>
-        </mat-accordion>
-        <li class="card__comment-list" >
-        </li>
-      </div>
-  </div>
+  <div class="card__comment">
+    <img [src]="posts.post_image" height="200px" width="auto">
+    <div class="card__font-secondary-light">
+      <mat-icon>favorite</mat-icon>
+      <mat-icon>add_comment</mat-icon>
+      <mat-icon>pan_tool</mat-icon>
+      <mat-icon>settings</mat-icon>
+      <mat-icon>schedule</mat-icon>
+      <mat-icon>swap_horizontal_circle</mat-icon>
+    </div>
+    <div>
+      <div class="card__font-secondary-light">Comments:</div>
+      <mat-accordion *ngFor="let userComment of posts.userComments">
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ posts.post_userId}}
+            </mat-panel-title>
+            <mat-panel-description>
+
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          {{ userComment.comment_body }}
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+        </mat-expansion-panel>
+      </mat-accordion>
+      <li class="card__comment-list">
+      </li>
+    </div>
   </div>
 </mat-card>
