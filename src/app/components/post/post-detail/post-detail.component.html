@@ -6,25 +6,28 @@
   <img [src]="posts.post_image" height="200px" width="auto">
   <div>
     <div class="card__comment">
-    <h3 class="card__font-secondary-light">Offers:</h3>
-      <mat-accordion *ngFor="let userComment of posts.userComments">
-        <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              {{ posts.post_userId}}
-            </mat-panel-title>
-            <mat-panel-description>
-              {{ userComment.comment_date }}
-            </mat-panel-description>
-          </mat-expansion-panel-header>
-          {{ userComment.comment_body }}
-        </mat-expansion-panel>
-        <mat-expansion-panel (opened)="panelOpenState = true"
-                             (closed)="panelOpenState = false">
-        </mat-expansion-panel>
-      </mat-accordion>
-      <li class="card__comment-list" >
-      </li>
+    <h3 class="card__font-secondary-light"><mat-icon>favorite</mat-icon></h3>
+      <div>
+        <h3 class="font-secondary-light">Comments:</h3>
+        <mat-accordion *ngFor="let userComment of posts.userComments">
+          <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{ posts.post_name}}
+              </mat-panel-title>
+              <mat-panel-description>
+
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            {{ userComment.comment_body }}
+          </mat-expansion-panel>
+          <mat-expansion-panel (opened)="panelOpenState = true"
+                               (closed)="panelOpenState = false">
+          </mat-expansion-panel>
+        </mat-accordion>
+        <li class="card__comment-list" >
+        </li>
+      </div>
   </div>
   </div>
 </mat-card>

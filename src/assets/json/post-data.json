@@ -6,7 +6,7 @@
     "post_body": "Looking to swap my bicycle for a skateboard. Any takers?",
     "post_image": "https://media.wired.com/photos/61afb905d184762c75e00411/master/w_2560%2Cc_limit/Gear-Jackbrabbit-Bike-Yellow-top.jpg",
     "post_userId": 1,
-    "post_categoryId": 4
+    "userComments": [7, 12, 2, 15, 8]
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "post_body": "I have a collection of vinyl records. Willing to trade for vintage posters.",
     "post_image": "https://sm.pcmag.com/t/pcmag_uk/help/a/analog-onl/analog-online-how-to-start-your-vinyl-record-collection_y4qj.3840.jpg",
     "post_userId": 3,
-    "post_categoryId": 5
+    "userComments": [4, 5, 19, 17, 6]
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "post_body": "Let's swap gardening tools. I have extra shovels and rakes.",
     "post_image": "https://images.food52.com/0qlmhPp3InWcRMZgLoxn3DXkqJg=/1200x900/d6424b51-c685-4610-84f3-04a19fa24d01--2021-0226_barebones-living_japanese-inspired-garden-tool-set_1x1_ty-mecham.jpg",
     "post_userId": 19,
-    "post_categoryId": 2
+    "userComments": [10, 13, 16, 1, 14]
   },
   {
     "id": 4,
@@ -33,16 +33,16 @@
     "post_body": "Offering a gaming console for trade. Looking for board games.",
     "post_image": "https://hips.hearstapps.com/hmg-prod/images/gh-index-gamingconsoles-052-print-preview-1659705142.jpg",
     "post_userId": 12,
-    "post_categoryId": 1
+    "userComments": [11, 3, 18, 9, 20]
   },
   {
     "id": 5,
-    "post_name": "I need tablet. Have a laptop for swap",
+    "post_name": "I need a tablet. Have a laptop for swap",
     "post_date": "2023-08-20",
     "post_body": "Seeking to exchange my old laptop for a tablet. Any takers?",
     "post_image": "https://i.pcmag.com/imagery/reviews/02lcg0Rt9G3gSqCpWhFG0o1-2..v1656623239.jpg",
     "post_userId": 14,
-    "post_categoryId": 6
+    "userComments": [2, 7, 5, 1, 4]
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "post_body": "Offering art supplies for trade. Need woodworking tools.",
     "post_image": "https://www.weareteachers.com/wp-content/uploads/magazinebowl.jpg",
     "post_userId": 1,
-    "post_categoryId": 3
+    "userComments": [9, 16, 14, 8, 3]
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "post_body": "I have a collection of vintage cameras. Open to offers.",
     "post_image": "https://www.adorama.com/alc/wp-content/uploads/2018/06/film-camera-types-feature.jpg",
     "post_userId": 20,
-    "post_categoryId": 1
+    "userComments": [1, 7, 10, 12, 19]
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "post_body": "Looking to swap my surfboard for a kayak. Let's chat!",
     "post_image": "https://images.photowall.com/products/60791/surfboard-1.jpg",
     "post_userId": 11,
-    "post_categoryId": 5
+    "userComments": [6, 2, 18, 14, 13]
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "post_body": "Offering a telescope for trade. Interested in musical instruments.",
     "post_image": "",
     "post_userId": 16,
-    "post_categoryId": 4
+    "userComments": [15, 5, 11, 3, 7]
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "post_body": "Let's swap gardening tips and seeds. I have tomatoes to share.",
     "post_image": "",
     "post_userId": 9,
-    "post_categoryId": 2
+    "userComments": [6, 19, 2, 8, 10]
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "post_body": "Offering vintage clothing for trade. Looking for retro accessories.",
     "post_image": "",
     "post_userId": 3,
-    "post_categoryId": 7
+    "userComments": [20, 9, 13, 1, 4]
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "post_body": "Seeking to exchange my smartphone for a smartwatch. Any takers?",
     "post_image": "",
     "post_userId": 10,
-    "post_categoryId": 4
+    "userComments": [15, 12, 6, 3, 18]
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "post_body": "Looking to swap my mountain bike for a road bike. Let's trade!",
     "post_image": "",
     "post_userId": 7,
-    "post_categoryId": 8
+    "userComments": [11, 5, 8, 16, 2]
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "post_body": "Offering camping gear for trade. Need hiking equipment.",
     "post_image": "",
     "post_userId": 18,
-    "post_categoryId": 9
+    "userComments": [12, 9, 4, 20, 7]
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "post_body": "I have a collection of classic novels. Willing to trade for comics.",
     "post_image": "",
     "post_userId": 8,
-    "post_categoryId": 3
+    "userComments": [10, 19, 5, 17, 13]
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "post_body": "Seeking to exchange my fitness equipment for a bicycle. Any takers?",
     "post_image": "",
     "post_userId": 2,
-    "post_categoryId": 4
+    "userComments": [15, 1, 3, 7, 9]
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "post_body": "Let's swap cooking recipes and utensils. I make a mean lasagna!",
     "post_image": "",
     "post_userId": 17,
-    "post_categoryId": 1
+    "userComments": [4, 6, 14, 10, 18]
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "post_body": "Offering fishing gear for trade. Interested in camping gear.",
     "post_image": "",
     "post_userId": 5,
-    "post_categoryId": 5
+    "userComments": [3, 12, 11, 16, 5]
   },
   {
     "id": 19,
@@ -168,7 +168,7 @@
     "post_body": "Looking to swap my skateboard for a bicycle. Any takers?",
     "post_image": "",
     "post_userId": 4,
-    "post_categoryId": 8
+    "userComments": [13, 10, 17, 8, 2]
   },
   {
     "id": 20,
@@ -177,6 +177,6 @@
     "post_body": "Offering musical instruments for trade. Need art supplies.",
     "post_image": "",
     "post_userId": 6,
-    "post_categoryId": 9
+    "userComments": [5, 9, 20, 14, 1]
   }
 ]

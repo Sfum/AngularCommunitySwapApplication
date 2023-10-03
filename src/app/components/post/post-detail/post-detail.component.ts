@@ -1,6 +1,7 @@
 import {Component, Input, OnInit, Output} from '@angular/core';
 import {Post} from "../../../models/post";
 import {MatDialog} from "@angular/material/dialog";
+import {PostComponent} from "../post.component";
 
 @Component({
   selector: 'app-post-detail',
@@ -9,11 +10,17 @@ import {MatDialog} from "@angular/material/dialog";
 })
 export class PostDetailComponent {
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
 
   panelOpenState = false;
 
   @Input()
   posts: Post | undefined;
 
+  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+    this.dialog.open(PostComponent, {
+      enterAnimationDuration,
+      exitAnimationDuration,
+    });
+  }
 }

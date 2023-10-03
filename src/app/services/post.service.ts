@@ -21,14 +21,15 @@ import {UserService} from "./user.service";
 @Injectable({
   providedIn: 'root'
 })
-export class PostService  {
+export class PostService {
 
-  private postsJsonUrl = 'assets/json/post-data.json';
-  private commentsJsonUrl = 'assets/json/comment-data.json';
+  private postsJsonUrl = 'http://localhost:8000';
+  private commentsJsonUrl = 'http://localhost:8000/comment';
 
   constructor(private http: HttpClient,
               private categoryService: CategoryService,
-              private userService: UserService) {}
+              private userService: UserService) {
+  }
 
   public categorySelectedSubject = new BehaviorSubject<number>(0);
   categorySelectedAction$ = this.categorySelectedSubject.asObservable();
@@ -67,6 +68,7 @@ export class PostService  {
     ),
     shareReplay(1)
   );
+
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(this.postsJsonUrl).pipe(
       switchMap((posts) => {
@@ -88,9 +90,7 @@ export class PostService  {
       })
     );
   }
-
   categorySelected(selectedCategoryId: number) {
     this.categorySelectedSubject.next(+selectedCategoryId);
   }
-
 }
