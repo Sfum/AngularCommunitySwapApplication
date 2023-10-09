@@ -17,6 +17,7 @@ import {Post} from "../models/post";
 import {userComment} from "../models/comment";
 import {CategoryService} from "./category.service";
 import {UserService} from "./user.service";
+import {Router} from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +30,8 @@ export class PostService {
 
     constructor(private http: HttpClient,
                 private categoryService: CategoryService,
-                private userService: UserService) {
+                private userService: UserService,
+                private router: Router) {
     }
 
     public categorySelectedSubject = new BehaviorSubject<number>(0);
@@ -98,7 +100,12 @@ export class PostService {
 
     addPost(post: Post): Observable<any> {
         let API_URL = `${this.postsJsonUrl}/add-post`;
-        return this.http.post(API_URL, post);
+
+        return this.http.post(API_URL, post).pipe(
+            tap(() => {
+                this.router.navigateByUrl('/posts');
+            })
+        );
     }
 
     deletePost(post: Post): Observable<any> {

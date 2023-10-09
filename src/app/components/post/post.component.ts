@@ -29,10 +29,9 @@ export class PostComponent {
       this.postService.deletePost(post).subscribe((res) => {
 
         this.posts$ = this.posts$.pipe(
-            map(posts => posts.filter(p => p !== post))
+          map(posts => posts.filter(p => p !== post))
         );
       });
     }
   }
-
 }

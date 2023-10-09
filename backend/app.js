@@ -24,9 +24,7 @@ app.use(
   express.static(path.join(__dirname, "dist/"))
 );
 
-// MongoDB Atlas connection string
-const atlasUri = "mongodb+srv://sektor1:UlqvAbWBUHUEN1JZ@cluster0.axkrcgo.mongodb.net/";
-
+const atlasUri = "mongodb+srv://sektor1:UlqvAbWBUHUEN1JZ@sektor2.hvhskib.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(atlasUri, {
     useNewUrlParser: true,

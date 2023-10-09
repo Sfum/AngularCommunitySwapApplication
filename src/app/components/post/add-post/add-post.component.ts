@@ -14,8 +14,6 @@ export class AddPostComponent {
   asyncFilterPipe$ = this.postService.productsFiltered$
 
   constructor(private postService: PostService,
-              private router: Router,
-              private ngZone: NgZone,
               public formBuilder: FormBuilder,
   ) {
     this.postForm = this.formBuilder.group({
@@ -36,12 +34,12 @@ export class AddPostComponent {
       () => {
         console.log('Post added successfully!');
       },
+
       (err) => {
         console.log('Post Error!');
         console.log(err);
       }
     );
-    this.ngZone.run(() => this.router.navigateByUrl('/'));
   }
 }
 

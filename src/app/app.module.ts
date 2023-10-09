@@ -24,6 +24,10 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatDialogModule} from '@angular/material/dialog';
 import { AddPostComponent } from './components/post/add-post/add-post.component';
 
+import {AppRoutingModule} from "./app.routing-module";
+import {RouterOutlet} from "@angular/router";
+import { EditPostComponent } from './components/post/edit-post/edit-post.component';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +40,7 @@ import { AddPostComponent } from './components/post/add-post/add-post.component'
     FilterPipe,
     SidebarNavComponent,
     AddPostComponent,
+    EditPostComponent,
 
   ],
   imports: [
@@ -51,7 +56,9 @@ import { AddPostComponent } from './components/post/add-post/add-post.component'
     FormsModule,
     MatSidenavModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    AppRoutingModule,
+    RouterOutlet
 
   ],
   providers: [],

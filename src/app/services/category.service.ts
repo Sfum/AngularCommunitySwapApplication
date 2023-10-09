@@ -8,7 +8,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class CategoryService {
 
-  MOCK_URL = 'http://localhost:8000/category';
+  MOCK_URL = 'assets/json/category-data.json';
 
   categories$ = this.httpClient
     .get<Category[]>(this.MOCK_URL)
