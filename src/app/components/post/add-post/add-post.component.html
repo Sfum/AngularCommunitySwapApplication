@@ -1,0 +1,135 @@
+<div class="form__label font-secondary">Add Post</div>
+<form
+  class="container"
+
+  [formGroup]="postForm"
+  (ngSubmit)="onSubmit()"
+>
+  <!--  *ngIf="asyncFilterPipe$ | async as asyncFilterPipe"-->
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Id"
+      formControlName="id"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Name"
+      formControlName="post_name"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Date"
+      formControlName="post_date"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Body"
+      formControlName="post_body"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Image"
+      formControlName="post_image"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Category"
+      formControlName="post_categoryId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post user"
+      formControlName="post_userId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="User Comments"
+      formControlName="userComments"
+      required
+    />
+  </mat-form-field>
+
+
+
+
+
+<!--  <mat-form-field class="form-control">-->
+<!--    <mat-label> Select Supplier </mat-label>-->
+<!--    <mat-select-->
+<!--      [(value)]="selectedSupplierId"-->
+<!--      (change)="optionSupplierSelected($any($event.target).value)"-->
+<!--      formControlName="supplierId"-->
+<!--    >-->
+<!--      <mat-option-->
+<!--        *ngFor="let element of asyncFilterPipe.suppliers"-->
+<!--        [value]="element.id"-->
+<!--      >-->
+<!--        {{ element.supplier_name }}-->
+<!--      </mat-option>-->
+<!--    </mat-select>-->
+<!--  </mat-form-field>-->
+<!--  <mat-form-field class="form-control">-->
+<!--    <mat-label> Select Category </mat-label>-->
+<!--    <mat-select-->
+<!--      [(value)]="selectedCategoryId"-->
+<!--      (change)="optionCategorySelected($any($event.target).value)"-->
+<!--      formControlName="categoryId"-->
+<!--    >-->
+<!--      <mat-option-->
+<!--        *ngFor="let element of asyncFilterPipe.categories"-->
+<!--        [value]="element.id"-->
+<!--      >-->
+<!--        {{ element.category_name }}-->
+<!--      </mat-option>-->
+<!--    </mat-select>-->
+<!--  </mat-form-field>-->
+<!--  <mat-form-field class="form-control">-->
+<!--    <input-->
+<!--      matInput-->
+<!--      class="form-control"-->
+<!--      type="text"-->
+<!--      placeholder="Review"-->
+<!--      formControlName="reviewId"-->
+<!--      required-->
+<!--    />-->
+<!--  </mat-form-field>-->
+
+  <button
+    class="form-control"
+    mat-raised-button
+    click="onSubmit()"
+    type="submit"
+  >
+    Add Post
+  </button>
+</form>

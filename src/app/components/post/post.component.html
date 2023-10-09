@@ -1,5 +1,5 @@
 <div class="container">
-<!--  <div class="card__search&#45;&#45;container">-->
+  <div class="card__search--container">
 <!--    <input matInput-->
 <!--           class="card__input&#45;&#45;field"-->
 <!--           type="text"-->
@@ -8,9 +8,11 @@
 <!--           autocomplete="off"-->
 <!--           placeholder="Search products..."-->
 <!--    />-->
-<!--  </div>-->
+    <app-sidebar></app-sidebar>
+  </div>
 <app-post-detail class="container__inner"
-                 *ngFor="let post of posts$ | async" [posts]="post">
+                 *ngFor="let post of posts$ | async" [posts]="post"
+                 (onDeleteEvent)="OnDeletePost($event, post.id)">
 </app-post-detail>
 
 </div>

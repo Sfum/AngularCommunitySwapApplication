@@ -1,6 +1,7 @@
 import {userComment} from "./comment";
 
 export interface Post {
+  _id: string,
   id: number;
   post_name: string;
   post_date: string;

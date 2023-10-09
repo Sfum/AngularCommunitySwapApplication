@@ -22,6 +22,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {SidebarNavComponent} from "./shared/sidebar/sidebar.component";
 import {MatButtonModule} from "@angular/material/button";
 import {MatDialogModule} from '@angular/material/dialog';
+import { AddPostComponent } from './components/post/add-post/add-post.component';
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     SidebarDetailComponent,
     FilterPipe,
     SidebarNavComponent,
+    AddPostComponent,
 
   ],
   imports: [

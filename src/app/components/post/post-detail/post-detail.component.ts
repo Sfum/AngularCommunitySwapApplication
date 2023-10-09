@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Post} from "../../../models/post";
 import {MatDialog} from "@angular/material/dialog";
 import {PostComponent} from "../post.component";
@@ -14,8 +14,12 @@ export class PostDetailComponent {
 
   panelOpenState = false;
 
-  @Input()
-  posts: Post | undefined;
+  @Input() posts: Post | undefined;
+  @Output() onDeleteEvent = new EventEmitter<Post>()
+
+  onDelete(posts: Post) {
+    this.onDeleteEvent.emit(posts)
+  }
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(PostComponent, {
@@ -23,4 +27,5 @@ export class PostDetailComponent {
       exitAnimationDuration,
     });
   }
+
 }
