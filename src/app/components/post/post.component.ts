@@ -14,15 +14,14 @@ export class PostComponent {
 
   searchText: any
 
-  constructor(private postService: PostService,
-              private router: Router,
-              private ngZone: NgZone,)
+  constructor(private postService: PostService)
   {
     this.posts$ = this.postService.productsFiltered$.pipe(
       map(posts => posts.sort((a, b) => b.id - a.id))
     );
   }
   posts$ = this.postService.productsFiltered$
+
 
   OnDeletePost(post: Post, i: number) {
     console.log(post);
@@ -34,7 +33,6 @@ export class PostComponent {
         );
       });
     }
-    this.ngZone.run(() => this.router.navigateByUrl('/'));
   }
 
 }
