@@ -22,7 +22,6 @@ export class PostComponent {
   }
   posts$ = this.postService.productsFiltered$
 
-
   OnDeletePost(post: Post, i: number) {
     console.log(post);
     if (window.confirm('Are you sure?')) {

@@ -9,10 +9,14 @@
 <!--           placeholder="Search products..."-->
 <!--    />-->
     <app-sidebar></app-sidebar>
+    <app-edit-post></app-edit-post>
+
   </div>
 <app-post-detail class="container__inner"
                  *ngFor="let post of posts$ | async" [posts]="post"
                  (onDeleteEvent)="OnDeletePost($event, post.id)">
+
 </app-post-detail>
+
 
 </div>

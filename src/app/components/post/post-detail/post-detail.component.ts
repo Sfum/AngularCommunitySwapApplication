@@ -16,10 +16,13 @@ export class PostDetailComponent {
 
   @Input() posts: Post | undefined;
   @Output() onDeleteEvent = new EventEmitter<Post>()
+  @Output() onDetailsEvent = new EventEmitter<Post>()
+
 
   onDelete(posts: Post) {
     this.onDeleteEvent.emit(posts)
   }
+
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(PostComponent, {

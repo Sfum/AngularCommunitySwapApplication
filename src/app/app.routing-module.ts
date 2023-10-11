@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {PostComponent} from "./components/post/post.component";
 import {PostDetailComponent} from "./components/post/post-detail/post-detail.component";
+import {PostViewComponent} from "./components/post/post-view/post-view.component";
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'posts'},
@@ -14,7 +15,7 @@ const routes: Routes = [
   // { path: 'products/:id', component: PostsViewCardComponent},
 
   {path: 'posts', component: PostComponent},
-  {path: 'posts/:id', component: PostDetailComponent},
+  {path: 'posts/:id', component: PostViewComponent},
 
 ]
 

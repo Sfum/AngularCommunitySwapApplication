@@ -1,0 +1,89 @@
+<div class="form__label font-secondary">Edit Post</div>
+<form
+  class="container"
+
+  [formGroup]="updateForm"
+  (ngSubmit)="onEditPost()"
+>
+  <!--  *ngIf="asyncFilterPipe$ | async as asyncFilterPipe"-->
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Id"
+      formControlName="id"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Name"
+      formControlName="post_name"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Date"
+      formControlName="post_date"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Body"
+      formControlName="post_body"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Image"
+      formControlName="post_image"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post Category"
+      formControlName="post_categoryId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="Post user"
+      formControlName="post_userId"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="form-control">
+    <input
+      matInput
+      type="text"
+      placeholder="User Comments"
+      formControlName="userComments"
+      required
+    />
+  </mat-form-field>
+  <button
+    class="form-control"
+    mat-raised-button
+    click="onEditPost()"
+    type="submit"
+  >
+    Add Post
+  </button>
+</form>

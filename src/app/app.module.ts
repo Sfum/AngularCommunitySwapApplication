@@ -25,8 +25,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { AddPostComponent } from './components/post/add-post/add-post.component';
 
 import {AppRoutingModule} from "./app.routing-module";
-import {RouterOutlet} from "@angular/router";
+import {RouterLink, RouterOutlet} from "@angular/router";
 import { EditPostComponent } from './components/post/edit-post/edit-post.component';
+import { PostViewComponent } from './components/post/post-view/post-view.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { EditPostComponent } from './components/post/edit-post/edit-post.compone
     SidebarNavComponent,
     AddPostComponent,
     EditPostComponent,
+    PostViewComponent,
 
   ],
   imports: [
@@ -58,7 +60,8 @@ import { EditPostComponent } from './components/post/edit-post/edit-post.compone
     MatButtonModule,
     MatDialogModule,
     AppRoutingModule,
-    RouterOutlet
+    RouterOutlet,
+    RouterLink
 
   ],
   providers: [],

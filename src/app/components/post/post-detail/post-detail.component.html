@@ -13,7 +13,8 @@
       <mat-icon>settings</mat-icon>
       <mat-icon>schedule</mat-icon>
       <mat-icon>swap_horizontal_circle</mat-icon>
-      <button mat-raised-button (click)="onDelete(posts)">delete</button>
+      <mat-icon [routerLink]="['/posts', posts._id]">edit</mat-icon>
+      <mat-icon (click)="onDelete(posts)">delete</mat-icon>
     </div>
     <div>
       <div class="card__font-secondary-light font-secondary">Comments:</div>
