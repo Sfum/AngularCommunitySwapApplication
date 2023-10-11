@@ -17,6 +17,7 @@ const routes: Routes = [
 
   {path: 'posts', component: PostComponent},
   {path: 'posts/:id', component: EditPostComponent},
+  {path: 'posts/post-view/:id', component: PostViewComponent},
 
 ]
 

@@ -2,6 +2,7 @@ import {Component, NgZone} from '@angular/core';
 import {FormBuilder, FormGroup} from "@angular/forms";
 import {PostService} from "../../../services/post.service";
 import {ActivatedRoute, Router} from "@angular/router";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-edit-post',
@@ -11,7 +12,6 @@ import {ActivatedRoute, Router} from "@angular/router";
 export class EditPostComponent {
   getId: any;
   updateForm: FormGroup;
-  asyncFilterPipe$ = this.postService.productsFiltered$
 
   constructor(private postService: PostService,
               public formBuilder: FormBuilder,
@@ -46,21 +46,11 @@ export class EditPostComponent {
       post_userId: [''],
       userComments: [''],
     });
+
   }
 
-  onEditPost(): any {
-    this.postService
-      .updatePost(this.getId, this.updateForm.value)
-      .subscribe(
-        () => {
-          if (window.confirm('Update this selection?'))
-            this.ngZone.run(() =>
-              this.router.navigateByUrl('/posts')
-            );
-        },
-        (err) => {
-          console.log(err);
-        }
-      );
+  onEditPost(): Observable<any> {
+    return this.postService.updatePost(this.getId, this.updateForm.value);
   }
+
 }

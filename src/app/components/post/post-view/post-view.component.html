@@ -1,1 +1,15 @@
-<p>post-view works!</p>
+<mat-card class="container" *ngIf="post">
+  <div class="view__left-column">
+    <img class="view__image" [src]="post.post_image" />
+  </div>
+
+  <div class="view__right-column">
+    <h2 class="view__post--name">{{ post.post_name }}</h2>
+    <h3 class="view__post--description">{{ post.post_body }}</h3>
+    <mat-icon>favorite</mat-icon>
+    <mat-icon  [routerLink]="['/posts/post-view', post._id]">note</mat-icon>
+    <mat-icon>schedule</mat-icon>
+    <mat-icon>swap_horizontal_circle</mat-icon>
+    <mat-icon [routerLink]="['/posts', post._id]">edit</mat-icon>
+  </div>
+</mat-card>
