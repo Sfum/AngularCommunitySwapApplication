@@ -28,6 +28,8 @@ import {AppRoutingModule} from "./app.routing-module";
 import {RouterLink, RouterOutlet} from "@angular/router";
 import { EditPostComponent } from './components/post/edit-post/edit-post.component';
 import { PostViewComponent } from './components/post/post-view/post-view.component';
+import { RegisterComponent } from './components/auth/register/register.component';
+import { LoginComponent } from './components/auth/login/login.component';
 
 
 @NgModule({
@@ -43,6 +45,8 @@ import { PostViewComponent } from './components/post/post-view/post-view.compone
     AddPostComponent,
     EditPostComponent,
     PostViewComponent,
+    RegisterComponent,
+    LoginComponent,
 
   ],
   imports: [
