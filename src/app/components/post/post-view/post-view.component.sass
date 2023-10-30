@@ -1,74 +1,34 @@
 .container
-  margin: 40px 300px
-  height: 800px
+  display: grid
+  grid-template-columns: 1fr 1fr
   width: 1000px
+  margin: auto
 
 .view__image
-  padding: var(--padding-lg)
-  width: 560px
-  margin: 30px
-
-.view__left-column
   grid-column: 1/2
+  padding: var(--padding-lg)
+  width: 400px
+  margin: 60px
   display: flex
   flex-direction: column
+  justify-content: center
   align-content: center
 
 .view__right-column
-  grid-column: 2/3
+  margin: auto
+  width: auto
+
+.view__text
+  width: fit-content
+  margin: 30px
+
+
+.view__icons
+  display: flex
+  margin: 20px
+
+.view__icon-single
   margin: auto
 
-
-.view__product
-  font-family: var(--font-primary)
-  font-size: var(--font-size-xlg)
-  font-weight: var(--font-weight-lg)
-
-.view__product--name
-  margin-top: var(--margin-xlg)
-  font-family: var(--font-primary)
-  font-size: var(--font-size-xlg)
-  font-weight: var(--font-weight-lg)
-
-
-.view__product--description
-  font-family: var(--font-primary)
-  font-weight: var(--font-weight-sm)
-  font-size: var(--font-size-md)
-  text-transform: capitalize
-  opacity: var(--opacity-sm)
-
-.view__product-label-h3
-  font-family: var(--font-primary)
-  font-size: var(--font-size-sm)
-  font-weight: var(--font-weight-md)
-  color: cadetblue
-  opacity: 70%
-
-
-.view__product-label-h4
-  font-family: var(--font-primary)
-  font-weight: var(--font-weight-sm)
-  font-size: var(--font-size-md)
-  margin-top: var(--margin-xsm)
-  padding-top: var(--padding-xsm)
-  text-transform: capitalize
-  opacity: var(--opacity-xsm)
-
-
-.view__product-label-h5
-  font-family: var(--font-primary)
-  font-weight: var(--font-weight-sm)
-  font-size: var(--font-size-sm)
-  margin-top: var(--margin-xsm)
-  padding-top: var(--padding-xsm)
-  text-transform: capitalize
-  opacity: var(--opacity-xsm)
-
-.view__button-group
-  margin-top: var(--margin-xsm)
-  text-align: start
-
 .view__button
-  margin-top: var(--margin-xsm)
-
+  margin: auto 30px

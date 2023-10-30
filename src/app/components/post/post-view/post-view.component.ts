@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {PostService} from "../../../services/post.service";
 import {Post} from "../../../models/post";
+import { Location} from "@angular/common";
 
 @Component({
   selector: 'app-post-view',
@@ -15,6 +16,7 @@ export class PostViewComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private postService: PostService,
+    public location: Location
   ) {
     this.getId = this.activatedRoute.snapshot.paramMap.get('id');
   }
@@ -28,4 +30,7 @@ export class PostViewComponent implements OnInit {
     }
   }
 
+  onClickBack() {
+    this.location.back()
+  }
 }
