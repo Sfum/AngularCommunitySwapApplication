@@ -1,0 +1,98 @@
+
+<div class="container__menu">
+  <div class="admin__label">WELCOME TO YOUR SHOP ADMIN INTERFACE!</div>
+  <div class="button__group--container">
+    <button
+      class="admin__button"
+      mat-raised-button
+      routerLink="/add-post"
+    >
+      Add post
+    </button>
+
+    <button
+      class="admin__button"
+      mat-raised-button
+      routerLink="/add-category"
+    >
+      Add Category
+    </button>
+    <button
+      class="admin__button"
+      mat-raised-button
+      routerLink="/categories-list"
+    >
+      Category List
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input
+      matInput
+      (keyup)="applyFilter($event)"
+      placeholder="Search posts..."
+      #input
+    />
+  </mat-form-field>
+
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+
+      <ng-container matColumnDef="post_name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Post Name</th>
+        <td mat-cell *matCellDef="let post">{{ post.post_name }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="post_date">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
+        <td mat-cell *matCellDef="let post">{{ post.post_date }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="post_body">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Post Body</th>
+        <td mat-cell *matCellDef="let post">{{ post.post_body }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="post_categoryId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Category</th>
+        <td mat-cell *matCellDef="let post">{{ post.post_categoryId }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="post_userId">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>User</th>
+        <td mat-cell *matCellDef="let post">{{ post.post_userId }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="edit">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Edit / Delete</th>
+        <td mat-cell *matCellDef="let post; let i = index">
+          <div *ngIf="vm$ | async as vm">
+            <button
+              mat-raised-button
+              class="button"
+              (click)="onUpdate()"
+              routerLink="/posts/edit/{{ post._id }}"
+            >
+              Edit
+            </button>
+            <button
+              mat-raised-button
+              class="button"
+              (click)="delete(post._id, i)"
+            >
+              Delete
+            </button>
+          </div>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let post; columns: displayedColumns"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </div>
+</div>

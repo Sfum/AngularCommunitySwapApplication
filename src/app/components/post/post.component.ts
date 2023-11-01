@@ -16,11 +16,11 @@ export class PostComponent {
 
   constructor(private postService: PostService)
   {
-    this.posts$ = this.postService.productsFiltered$.pipe(
+    this.posts$ = this.postService.postsFiltered$.pipe(
       map(posts => posts.sort((a, b) => b.id - a.id))
     );
   }
-  posts$ = this.postService.productsFiltered$
+  posts$ = this.postService.postsFiltered$
 
   OnDeletePost(post: Post, i: number) {
     console.log(post);

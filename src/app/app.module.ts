@@ -30,6 +30,10 @@ import { EditPostComponent } from './components/post/edit-post/edit-post.compone
 import { PostViewComponent } from './components/post/post-view/post-view.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { LoginComponent } from './components/auth/login/login.component';
+import { PostAdminComponent } from './components/post/post-admin/post-admin.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatTableModule} from "@angular/material/table";
+import {MatSortModule} from "@angular/material/sort";
 
 
 @NgModule({
@@ -47,6 +51,7 @@ import { LoginComponent } from './components/auth/login/login.component';
     PostViewComponent,
     RegisterComponent,
     LoginComponent,
+    PostAdminComponent,
 
   ],
   imports: [
@@ -65,7 +70,10 @@ import { LoginComponent } from './components/auth/login/login.component';
     MatDialogModule,
     AppRoutingModule,
     RouterOutlet,
-    RouterLink
+    RouterLink,
+    MatPaginatorModule,
+    MatTableModule,
+    MatSortModule
 
   ],
   providers: [],

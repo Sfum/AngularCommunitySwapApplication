@@ -50,7 +50,7 @@ export class PostService {
       return EMPTY;
     })
   );
-  productsFiltered$ = combineLatest([
+  postsFiltered$ = combineLatest([
     this.categoryActionStream$,
     this.categoryService.categories$,
     this.userService.users$

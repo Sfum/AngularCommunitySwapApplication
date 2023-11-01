@@ -11,7 +11,7 @@ import {userComment} from "../../../models/comment";
 })
 export class AddPostComponent {
   postForm: FormGroup;
-  asyncFilterPipe$ = this.postService.productsFiltered$
+  asyncFilterPipe$ = this.postService.postsFiltered$
 
   constructor(private postService: PostService,
               public formBuilder: FormBuilder,
