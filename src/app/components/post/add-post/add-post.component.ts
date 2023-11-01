@@ -1,8 +1,6 @@
-import {Component, NgZone} from '@angular/core';
+import {Component} from '@angular/core';
 import {PostService} from "../../../services/post.service";
 import {FormBuilder, FormGroup} from '@angular/forms';
-import {Router} from '@angular/router';
-import {userComment} from "../../../models/comment";
 
 @Component({
   selector: 'app-add-post',

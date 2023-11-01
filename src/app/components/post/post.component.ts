@@ -2,7 +2,6 @@ import {ChangeDetectionStrategy, Component, NgZone} from '@angular/core';
 import {PostService} from "../../services/post.service";
 import {map} from "rxjs";
 import {Post} from "../../models/post";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-post',
@@ -14,12 +13,12 @@ export class PostComponent {
 
   searchText: any
 
-  constructor(private postService: PostService)
-  {
+  constructor(private postService: PostService) {
     this.posts$ = this.postService.postsFiltered$.pipe(
       map(posts => posts.sort((a, b) => b.id - a.id))
     );
   }
+
   posts$ = this.postService.postsFiltered$
 
   OnDeletePost(post: Post, i: number) {

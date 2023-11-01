@@ -1,11 +1,10 @@
-<div class="form__label font-secondary">Add Post</div>
+<div class="label font-primary">Add Post</div>
+
 <form
   class="container"
-
   [formGroup]="postForm"
   (ngSubmit)="onSubmit()"
 >
-  <!--  *ngIf="asyncFilterPipe$ | async as asyncFilterPipe"-->
   <mat-form-field class="form-control">
     <input
       matInput
