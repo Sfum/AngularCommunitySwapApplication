@@ -7,22 +7,27 @@
   padding: 40px
   border-radius: 20px
   width: 420px
-  height: 800px
+  height: 500px
+
   &__title
     grid-row: 1/2
 
   &__subtitle
     grid-row: 2/3
     opacity: 70%
+
   &__content
     grid-row: 3/4
+
   &__date
     grid-row: 4/5
     margin: 20px 0
     opacity: 40%
+
   &__comment
     grid-row: 5/6
     margin: 10px 20px 20px 0
+
   &__comment-list
     list-style-type: none
 
@@ -30,16 +35,19 @@
     display: flex
     justify-content: space-between
     align-items: baseline
-    margin: 20px
+    margin: 10px
+
+.comment_container
+    overflow: scroll
 
 @media only screen and (max-width: 900px)
- .card
-  margin: 30px
-  padding: 30px
-  border-radius: 20px
+  .card
+    margin: 30px
+    padding: 30px
+    border-radius: 20px
 
-  &__comment-list
-    list-style-type: none
+    &__comment-list
+      list-style-type: none
 
-  &__font-secondary-light
-    margin: 20px
+    &__font-secondary-light
+      margin: 20px
