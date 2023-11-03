@@ -34,6 +34,7 @@ import { PostAdminComponent } from './components/post/post-admin/post-admin.comp
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
+import { PostCommentComponent } from './components/post/post-comment/post-comment.component';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import {MatSortModule} from "@angular/material/sort";
     RegisterComponent,
     LoginComponent,
     PostAdminComponent,
+    PostCommentComponent,
 
   ],
   imports: [

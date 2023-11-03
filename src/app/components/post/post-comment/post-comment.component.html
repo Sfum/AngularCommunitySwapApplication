@@ -1,0 +1,17 @@
+<div class="card__font-secondary-light font-secondary">Comments:</div>
+<mat-accordion *ngIf="posts" class="comment_container">
+  <mat-expansion-panel *ngFor="let userComment of posts.userComments" hideToggle>
+    <mat-expansion-panel-header class="font-secondary">
+      <mat-panel-title class="font-secondary">
+        {{ posts.post_userId}}
+      </mat-panel-title>
+      <mat-panel-description>
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    {{ userComment.comment_body }}
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+  </mat-expansion-panel>
+</mat-accordion>
