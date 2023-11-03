@@ -1,17 +1,30 @@
 <mat-card class="container mat-elevation-z24" *ngIf="post">
-  <img class="view__image" [src]="post.post_image" alt=""/>
+  <img class="view__image" [src]="post.post_image" alt="" height="250px"/>
   <div class="view__right-column">
+    <div class="view__button-group">
+      <button class="view__button" mat-raised-button>
+        <mat-icon>favorite</mat-icon>
+        Wishlist
+      </button>
+      <button class="view__button" mat-raised-button>
+        <mat-icon>swipe</mat-icon>
+        Offer
+      </button>
+    </div>
     <div class="view__text">
       <h2 class="view__post--name">{{ post.post_name }}</h2>
       <h3 class="view__post--description">{{ post.post_body }}</h3>
     </div>
-    <div class="view__icons">
-      <mat-icon class="view__icon-single">favorite</mat-icon>
-      <mat-icon class="view__icon-single" [routerLink]="['/posts/post-view', post._id]">note</mat-icon>
-      <mat-icon class="view__icon-single">schedule</mat-icon>
-      <mat-icon class="view__icon-single">swap_horizontal_circle</mat-icon>
-      <mat-icon class="view__icon-single" [routerLink]="['/posts', post._id]">edit</mat-icon>
+    <div class="view__button-back" (click)="onClickBack()">
+      <button mat-raised-button>
+        <mat-icon>keyboard_backspace</mat-icon>
+        Back
+      </button>
     </div>
-    <div class="view__button" (click)="onClickBack()" ><button mat-raised-button>Back</button></div>
+  </div>
+  <div class="view__comment">
+    <app-post-comment></app-post-comment>
   </div>
 </mat-card>
+
+

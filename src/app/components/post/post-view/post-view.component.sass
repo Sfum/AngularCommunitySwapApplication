@@ -2,13 +2,13 @@
   display: grid
   grid-template-columns: 1fr 1fr
   width: 1000px
-  margin: auto
+  overflow: auto
+  margin: 30px auto
 
 .view__image
   grid-column: 1/2
+  margin: 30px auto
   padding: var(--padding-lg)
-  width: 400px
-  margin: 60px
   display: flex
   flex-direction: column
   justify-content: center
@@ -22,13 +22,16 @@
   width: fit-content
   margin: 30px
 
-
-.view__icons
+.view__button-group
   display: flex
-  margin: 20px
-
-.view__icon-single
-  margin: auto
+  flex-direction: column
+  margin: 30px
 
 .view__button
-  margin: auto 30px
+  margin: 5px 0
+
+.view__button-back
+  margin: 30px
+
+.view__comment
+  margin: 30px
