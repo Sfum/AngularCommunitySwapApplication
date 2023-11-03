@@ -5,15 +5,9 @@
   <div class="card__date font-secondary">{{ posts.post_date | slice: 0:10}}</div>
   <div class="card__comment">
     <img [src]="posts.post_image" height="200px" width="auto" alt="">
-    <div class="card__font-secondary-light">
-      <mat-icon>favorite</mat-icon>
-      <mat-icon [routerLink]="['/posts/post-view', posts._id]">note</mat-icon>
-      <mat-icon>schedule</mat-icon>
-      <mat-icon>swap_horizontal_circle</mat-icon>
-      <mat-icon [routerLink]="['/posts', posts._id]">edit</mat-icon>
-      <mat-icon (click)="onDelete(posts)">delete</mat-icon>
+    <div class="card__button-menu">
+      <button mat-raised-button><mat-icon>favorite</mat-icon>Wishlist</button>
+      <button mat-raised-button [routerLink]="['/posts/post-view', posts._id]"><mat-icon>note</mat-icon>Detail</button>
     </div>
-<app-post-comment></app-post-comment>
-
   </div>
 </mat-card>
