@@ -4,7 +4,6 @@
   </div>
 <app-post-detail class="container__inner"
                  *ngFor="let post of posts$ | async" [posts]="post"
-                 (onDeleteEvent)="OnDeletePost($event, post.id)">
-
+                 (onAddToWishlistEvent)="onAddToWishlist($event)">
 </app-post-detail>
 </div>

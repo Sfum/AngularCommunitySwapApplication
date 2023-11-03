@@ -35,6 +35,8 @@ import {MatPaginatorModule} from "@angular/material/paginator";
 import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
 import { PostCommentComponent } from './components/post/post-comment/post-comment.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
+import { WishlistDetailComponent } from './components/wishlist/wishlist-detail/wishlist-detail.component';
 
 
 @NgModule({
@@ -54,6 +56,8 @@ import { PostCommentComponent } from './components/post/post-comment/post-commen
     LoginComponent,
     PostAdminComponent,
     PostCommentComponent,
+    WishlistComponent,
+    WishlistDetailComponent,
 
   ],
   imports: [

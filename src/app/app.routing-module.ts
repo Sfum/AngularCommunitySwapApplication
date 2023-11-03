@@ -8,6 +8,7 @@ import {RegisterComponent} from "./components/auth/register/register.component";
 import {LoginComponent} from "./components/auth/login/login.component";
 import {PostAdminComponent} from "./components/post/post-admin/post-admin.component";
 import {AddPostComponent} from "./components/post/add-post/add-post.component";
+import {WishlistComponent} from "./components/wishlist/wishlist.component";
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'posts'},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
   {path: 'admin', component: PostAdminComponent},
+  {path: 'wishlist', component: WishlistComponent},
 ]
 
 @NgModule({

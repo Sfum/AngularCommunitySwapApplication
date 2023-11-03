@@ -1,7 +1,8 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Post} from "../../../models/post";
+import {Post} from "../../../models/post"
 import {MatDialog} from "@angular/material/dialog";
 import {PostComponent} from "../post.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-post-detail',
@@ -10,16 +11,11 @@ import {PostComponent} from "../post.component";
 })
 export class PostDetailComponent {
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog,
+              private router: Router) {}
 
   @Input() posts: Post | undefined;
-  @Output() onDeleteEvent = new EventEmitter<Post>()
-  @Output() onDetailsEvent = new EventEmitter<Post>()
-  panelOpenState = false;
-
-  onDelete(posts: Post) {
-    this.onDeleteEvent.emit(posts)
-  }
+  @Output() onAddToWishlistEvent = new EventEmitter<Post>()
 
   openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
     this.dialog.open(PostComponent, {
@@ -27,4 +23,11 @@ export class PostDetailComponent {
       exitAnimationDuration,
     });
   }
+
+  addToWishlist(posts: Post) {
+    this.onAddToWishlistEvent.emit(posts);
+    this.router.navigate(['/wishlist'])
+
+  }
+
 }

@@ -7,8 +7,8 @@
     <img [src]="posts.post_image" height="200px" width="auto" alt="">
     <div class="card__button-menu">
       <button class="card__button" mat-raised-button [routerLink]="['/posts/post-view', posts._id]"><mat-icon>note</mat-icon>Detail</button>
-      <button class="card__button" mat-raised-button><mat-icon>favorite</mat-icon>Wishlist</button>
-      <button class="card__button" mat-raised-button><mat-icon>swipe</mat-icon>Offer</button>
+      <button class="card__button" mat-raised-button (click)="addToWishlist(posts)"><mat-icon>favorite</mat-icon>Wishlist</button>
+      <button class="card__button" mat-raised-button [routerLink]="['/login']"><mat-icon>swipe</mat-icon>Offer</button>
     </div>
   </div>
 </mat-card>

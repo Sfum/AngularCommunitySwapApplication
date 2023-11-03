@@ -1,0 +1,3 @@
+<app-wishlist-detail *ngIf="posts$" [posts]="posts"
+                     (removeWishlistEvent)="removeFromWishlist($event)"
+></app-wishlist-detail>
