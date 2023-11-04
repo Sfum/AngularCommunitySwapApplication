@@ -1,7 +1,4 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {Router} from "@angular/router";
-import {PostService} from "../../../services/post.service";
-import {CategoryService} from "../../../services/category.service";
 import {Category} from "../../../models/category";
 import {Observable} from "rxjs";
 

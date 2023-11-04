@@ -15,8 +15,6 @@ export class EditPostComponent {
 
   constructor(private postService: PostService,
               public formBuilder: FormBuilder,
-              private router: Router,
-              private ngZone: NgZone,
               private activatedRoute: ActivatedRoute,
   ) {
 
