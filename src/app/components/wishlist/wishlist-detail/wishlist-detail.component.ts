@@ -14,16 +14,11 @@ export class WishlistDetailComponent {
 
   @Input()  posts!: Post[];
 
-  @Output() addToCartEvent: EventEmitter<Post> = new EventEmitter<Post>();
   @Output() removeWishlistEvent: EventEmitter<Post> = new EventEmitter<Post>();
 
   constructor(
     public router: Router,
     public location: Location) {
-  }
-
-  addProductToCart(post: Post) {
-    this.addToCartEvent.emit(post);
   }
 
   removeFromWishlist(post: Post) {

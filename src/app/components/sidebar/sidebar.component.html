@@ -1,6 +1,9 @@
-<app-sidebar-detail class="sidebar__filter"
-  (categorySelectedEvent)="optionCategorySelected($event)">
-</app-sidebar-detail>
+<app-sidebar-detail
+  class="sidebar__filter"
+  [filterField$]="filterField$"
+  (categorySelectedEvent)="optionCategorySelected($event)"
+></app-sidebar-detail>
+
 <div class="sidebar__add">
   <button mat-raised-button routerLink="/login">Login</button>
   <button mat-raised-button routerLink="/register">Register</button>

@@ -2,7 +2,7 @@
   <img class="view__image" [src]="post.post_image" alt="" height="250px"/>
   <div class="view__right-column">
     <div class="view__button-group">
-      <button class="view__button" mat-raised-button>
+      <button class="view__button" mat-raised-button (click)="addToWishlist(post)">
         <mat-icon>favorite</mat-icon>
         Wishlist
       </button>

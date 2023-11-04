@@ -1,3 +1,4 @@
+@import '../../../../../src/styles.sass'
 
 .wishlist__items--container
   display: grid
@@ -13,21 +14,18 @@
 
 .wishlist__image
   grid-column: 1/2
-  height: 100px
   margin: auto
 
+.wishlist__text
+  display: flex
+  flex-direction: column
+  margin: 0 20px
 
 .wishlist__title
-  grid-area: product-name
-
+  margin: 2px 2px
 
 .wishlist__subtitle
-  margin-top: var(--margin-xsm)
-
-
-.wishlist__icon-field
-  margin: 0 auto
-
+  margin-top: 5px
 
 .wishlist__card--icon
   padding: 3px
@@ -46,3 +44,12 @@
   margin: var(--margin-sm)
   width: 130px
 
+.wishlist__button-small
+  position: absolute
+  bottom: 30px
+  right: 30px
+
+.wishlist__button-large
+  margin-top: 20px
+  width: 240px
+  height: 200px

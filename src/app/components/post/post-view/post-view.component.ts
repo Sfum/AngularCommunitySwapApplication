@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {PostService} from "../../../services/post.service";
 import {Post} from "../../../models/post";
@@ -12,6 +12,8 @@ import { Location} from "@angular/common";
 export class PostViewComponent implements OnInit {
   getId: any;
   post?: Post;
+
+  @Output() onAddToWishlistEvent: EventEmitter<Post> = new EventEmitter<Post>()
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -32,5 +34,9 @@ export class PostViewComponent implements OnInit {
 
   onClickBack() {
     this.location.back()
+  }
+
+  addToWishlist(post: Post) {
+    this.onAddToWishlistEvent.emit(post)
   }
 }
