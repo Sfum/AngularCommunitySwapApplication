@@ -28,16 +28,18 @@ export class AddPostComponent {
   }
 
   onSubmit(): any {
-    this.postService.addPost(this.postForm.value).subscribe(
-      () => {
-        console.log('Post added successfully!');
-      },
 
-      (err) => {
-        console.log('Post Error!');
-        console.log(err);
-      }
-    );
+    // // @ts-ignore
+    // this.postService.addPost(this.postForm.value).subscribe(
+    //   () => {
+    //     console.log('Post added successfully!');
+    //   },
+    //     // @ts-ignore
+    //   (err) => {
+    //     console.log('Post Error!');
+    //     console.log(err);
+    //   }
+    // );
   }
 }
 

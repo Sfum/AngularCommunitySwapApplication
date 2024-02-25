@@ -23,17 +23,17 @@ export class PostComponent {
 
   posts$ = this.postService.postsFiltered$
 
-  OnDeletePost(post: Post, i: number) {
-    console.log(post);
-    if (window.confirm('Are you sure?')) {
-      this.postService.deletePost(post).subscribe((res) => {
-
-        this.posts$ = this.posts$.pipe(
-          map(posts => posts.filter(p => p !== post))
-        );
-      });
-    }
-  }
+  // OnDeletePost(post: Post, i: number) {
+  //   console.log(post);
+  //   if (window.confirm('Are you sure?')) {
+  //     this.postService.deletePost(post).subscribe((res) => {
+  //
+  //       this.posts$ = this.posts$.pipe(
+  //         map(posts => posts.filter(p => p !== post))
+  //       );
+  //     });
+  //   }
+  // }
 
   onAddToWishlist(posts: Post) {
    this.wishlistService.addToWishlist(posts)

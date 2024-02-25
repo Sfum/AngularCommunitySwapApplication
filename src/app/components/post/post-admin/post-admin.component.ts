@@ -33,9 +33,9 @@ export class PostAdminComponent implements AfterViewInit {
   vm$ = this.postService.postsFiltered$
 
   constructor(
-    private postService: PostService,
-    private router: Router,
-    private ngZone: NgZone,
+      private postService: PostService,
+      private router: Router,
+      private ngZone: NgZone,
   ) {
     this.dataSource = new MatTableDataSource<Post>();
   }
@@ -63,25 +63,26 @@ export class PostAdminComponent implements AfterViewInit {
 
   onUpdate(): any {
     this.postService
-      .updatePost(this.getId, this.updateForm.value)
-      .subscribe(
-        () => {
-          if (window.confirm('Update this selection?'))
-            this.ngZone.run(() => this.router.navigateByUrl('/admin'));
-        },
-        (err) => {
-          console.log(err);
-        }
-      );
-  }
-
-  delete(id: any, i: any) {
-    console.log(id);
-    if (window.confirm('Do you want to go ahead?')) {
-      this.postService.deletePost(id).subscribe((res) => {
-        this.Posts.splice(i, 1);
-      });
-    }
-    this.ngZone.run(() => this.router.navigateByUrl('/admin'));
+        .updatePost(this.getId, this.updateForm.value)
+        .subscribe(
+            () => {
+              if (window.confirm('Update this selection?'))
+                this.ngZone.run(() => this.router.navigateByUrl('/admin'));
+            },
+            (err) => {
+              console.log(err);
+            }
+        );
   }
 }
+//
+//   delete(id: any, i: any) {
+//     console.log(id);
+//     if (window.confirm('Do you want to go ahead?')) {
+//       this.postService.deletePost(id).subscribe((res) => {
+//         this.Posts.splice(i, 1);
+//       });
+//     }
+//     this.ngZone.run(() => this.router.navigateByUrl('/admin'));
+//   }
+// }

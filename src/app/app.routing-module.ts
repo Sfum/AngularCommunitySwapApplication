@@ -10,6 +10,7 @@ import {PostAdminComponent} from "./components/post/post-admin/post-admin.compon
 import {AddPostComponent} from "./components/post/add-post/add-post.component";
 import {WishlistComponent} from "./components/wishlist/wishlist.component";
 
+
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'posts'},
   // { path: 'posts',

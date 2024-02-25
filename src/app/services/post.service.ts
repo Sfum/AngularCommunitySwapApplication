@@ -1,5 +1,4 @@
 import {Injectable} from '@angular/core';
-import {HttpClient, HttpHeaders} from "@angular/common/http";
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import {
@@ -7,35 +6,23 @@ import {
     catchError,
     combineLatest,
     EMPTY,
-    forkJoin,
     map,
     Observable,
-    of,
     shareReplay,
-    switchMap,
-    tap, throwError
+    throwError
 } from "rxjs";
 import {Post} from "../models/post";
-import {userComment} from "../models/comment";
 import {CategoryService} from "./category.service";
-import {UserService} from "./user.service";
-import {Router} from "@angular/router";
 
 @Injectable({
   providedIn: 'root'
 })
 export class PostService {
 
-  private postsJsonUrl = 'http://localhost:8000';
-  private commentsJsonUrl = 'assets/json/comment-data.json';
-  httpHeaders = new HttpHeaders().set('Content-Type', 'application/json');
-
-  constructor(private http: HttpClient,
-              private categoryService: CategoryService,
-              private userService: UserService,
-              private router: Router,
+  constructor(private categoryService: CategoryService,
               private firestore: AngularFirestore) {
   }
+
 
   public categorySelectedSubject = new BehaviorSubject<number>(0);
   categorySelectedAction$ = this.categorySelectedSubject.asObservable();
@@ -74,13 +61,6 @@ export class PostService {
 
   categorySelected(selectedCategoryId: number) {
     this.categorySelectedSubject.next(+selectedCategoryId);
-  }
-
-  deletePost(post: Post): Observable<any> {
-    const postIdAsString = post.id.toString();
-    const API_URL = `${this.postsJsonUrl}/delete-post/${postIdAsString}`;
-    console.log(postIdAsString);
-    return this.http.delete(API_URL, {headers: this.httpHeaders});
   }
 
   getPosts(): Observable<any[]> {
