@@ -4,7 +4,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
 const postRoute = express.Router();
 let Post = require("../model/post");
 

@@ -1,6 +1,5 @@
 import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-
 import {AppComponent} from './app.component';
 import {PostComponent} from './components/post/post.component';
 import {PostDetailComponent} from './components/post/post-detail/post-detail.component';
@@ -37,7 +36,12 @@ import {MatSortModule} from "@angular/material/sort";
 import { PostCommentComponent } from './components/post/post-comment/post-comment.component';
 import { WishlistComponent } from './components/wishlist/wishlist.component';
 import { WishlistDetailComponent } from './components/wishlist/wishlist-detail/wishlist-detail.component';
-
+import {AngularFireModule} from '@angular/fire/compat';
+import {AngularFireAuthModule} from '@angular/fire/compat/auth';
+import {AngularFireStorageModule} from '@angular/fire/compat/storage';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import {AngularFireDatabaseModule} from '@angular/fire/compat/database';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -79,10 +83,16 @@ import { WishlistDetailComponent } from './components/wishlist/wishlist-detail/w
     RouterLink,
     MatPaginatorModule,
     MatTableModule,
-    MatSortModule
+    MatSortModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    AngularFireDatabaseModule,
+  ],
+  providers: [
 
   ],
-  providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

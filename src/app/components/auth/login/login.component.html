@@ -1,15 +1,25 @@
-<!-- login.component.html -->
-<div class="login-container">
-  <div class="font-primary label">Login</div>
-  <form (ngSubmit)="onSubmit()">
-    <mat-form-field class="form-group">
-      <input matInput placeholder="Username" id="username" name="username" [(ngModel)]="user.username" required>
-    </mat-form-field>
-
-    <mat-form-field class="form-group">
-      <input matInput type="password" placeholder="Password" id="password" name="password" [(ngModel)]="user.password" required>
-    </mat-form-field>
-
-    <button mat-raised-button type="submit">Login</button>
-  </form>
-</div>
+<mat-card class="container">
+<form class="registration-form" [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="username">Username:</label>
+    <input matInput type="text" id="username" formControlName="username" />
+    <div *ngIf="registrationForm.get('username')?.hasError('required')" class="error-message">
+      Username is required.
+    </div>
+    <div *ngIf="registrationForm.get('username')?.hasError('minlength')" class="error-message">
+      Username must be at least 3 characters long.
+    </div>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input matInput type="password" id="password" formControlName="password" />
+    <div *ngIf="registrationForm.get('password')?.hasError('required')" class="error-message">
+      Password is required.
+    </div>
+    <div *ngIf="registrationForm.get('password')?.hasError('minlength')" class="error-message">
+      Password must be at least 6 characters long.
+    </div>
+  </div>
+  <button type="submit" [disabled]="!registrationForm.valid">Register</button>
+</form>
+</mat-card>

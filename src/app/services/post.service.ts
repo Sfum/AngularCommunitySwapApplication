@@ -1,17 +1,19 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
+import { AngularFirestore } from '@angular/fire/compat/firestore';
+
 import {
-  BehaviorSubject,
-  catchError,
-  combineLatest,
-  EMPTY,
-  forkJoin,
-  map,
-  Observable,
-  of,
-  shareReplay,
-  switchMap,
-  tap
+    BehaviorSubject,
+    catchError,
+    combineLatest,
+    EMPTY,
+    forkJoin,
+    map,
+    Observable,
+    of,
+    shareReplay,
+    switchMap,
+    tap, throwError
 } from "rxjs";
 import {Post} from "../models/post";
 import {userComment} from "../models/comment";
@@ -31,7 +33,8 @@ export class PostService {
   constructor(private http: HttpClient,
               private categoryService: CategoryService,
               private userService: UserService,
-              private router: Router) {
+              private router: Router,
+              private firestore: AngularFirestore) {
   }
 
   public categorySelectedSubject = new BehaviorSubject<number>(0);
@@ -53,9 +56,8 @@ export class PostService {
   postsFiltered$ = combineLatest([
     this.categoryActionStream$,
     this.categoryService.categories$,
-    this.userService.users$
   ]).pipe(
-    map(([post, categories, users]) =>
+    map(([post, categories]) =>
       post.map(
         (post) =>
           ({
@@ -63,63 +65,16 @@ export class PostService {
             post_categoryId: categories.find((c) => post.post_categoryId === c.id)?.[
               'category_name'
               ],
-            post_userId: users.find((u) => post.post_userId === u.id)?.[
-              'user_name'
-              ],
           } as unknown as Post)
       )
     ),
     shareReplay(1)
   );
 
-  getPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>(this.postsJsonUrl).pipe(
-      switchMap((posts) => {
-        const postIds = posts.map((post) => post.id);
-        return forkJoin(
-          of(posts),
-          this.http.get<userComment[]>(this.commentsJsonUrl).pipe(
-            map((userComments) =>
-              userComments.filter((comment) => postIds.includes(comment.comment_postId))
-            )
-          )
-        );
-      }),
-      map(([posts, userComments]) => {
-        for (const post of posts) {
-          post.userComments = userComments.filter((comment) => comment.comment_postId === post.id);
-        }
-        return posts;
-      })
-    );
-  }
 
   categorySelected(selectedCategoryId: number) {
     this.categorySelectedSubject.next(+selectedCategoryId);
   }
-
-  addPost(post: Post): Observable<any> {
-    let API_URL = `${this.postsJsonUrl}/add-post`;
-
-    return this.http.post(API_URL, post).pipe(
-      tap(() => {
-        this.router.navigateByUrl('/posts');
-      })
-    );
-  }
-  getPost(id: any): Observable<any> {
-    let API_URL = `${this.postsJsonUrl}/post/${id}`;
-    return this.http.get(API_URL, { headers: this.httpHeaders }).pipe(
-      map((res: any) => {
-        return res || {};
-      })
-    );
-  }
-  updatePost(id: any, data: any): Observable<any> {
-    let API_URL = `${this.postsJsonUrl}/update-post/${id}`;
-    return this.http.put(API_URL, data, {headers: this.httpHeaders});
-  }
-
 
   deletePost(post: Post): Observable<any> {
     const postIdAsString = post.id.toString();
@@ -127,4 +82,38 @@ export class PostService {
     console.log(postIdAsString);
     return this.http.delete(API_URL, {headers: this.httpHeaders});
   }
+
+  getPosts(): Observable<any[]> {
+    return this.firestore.collection('posts').valueChanges();
+  }
+
+  addPost(post: Post): Promise<any> {
+    return this.firestore.collection('posts').add(post);
+
+  }
+
+  getPost(id: string): Observable<any> {
+    const productRef = this.firestore.collection('posts').doc<Post>(id);
+    return productRef.valueChanges().pipe(
+      catchError((error) => {
+        console.error('Error getting post: ', error);
+        return throwError('Something went wrong while fetching the post');
+      })
+    );
+  }
+
+  updatePost(id: string, post: Post): Observable<void> {
+    return new Observable((observer) => {
+      this.firestore.collection('posts').doc(id).update(post)
+        .then(() => {
+          observer.next();
+          observer.complete();
+        })
+        .catch((error) => {
+          console.error('Error updating product: ', error);
+          observer.error('Something went wrong while updating the product');
+        });
+    });
+  }
+
 }

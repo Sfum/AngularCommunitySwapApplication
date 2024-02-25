@@ -1,24 +1,43 @@
-/* login.component.scss */
-.login-container
-  max-width: 300px
+.container
+  width: 100%
+  margin: auto
+
+.registration-form
   margin: 0 auto
+  padding: 20px
+  text-align: center
 
   h2
-    text-align: center
+    margin-bottom: 20px
 
+  div
+    margin-bottom: 15px
 
-  form
-    display: flex
-    flex-direction: column
+    label
+      display: block
+      margin-bottom: 5px
 
-    .form-group
-      margin-bottom: 1rem
+    input
+      width: 700px
+      padding: 10px
+      margin-top: 5px
 
+    div.error-message
+      font-size: 0.8em
+      margin-top: 5px
 
-    button
-      padding: 0.5rem 1rem
-      border: none
-      cursor: pointer
+  button
+    display: block
+    padding: 10px
+    border: none
+    cursor: pointer
+
+    &:hover
+      background-color: #2980b9
+
+    &:disabled
+      background-color: #bdc3c7
+      cursor: not-allowed
 
 
 
